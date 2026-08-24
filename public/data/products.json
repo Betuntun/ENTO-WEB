@@ -1,0 +1,98 @@
+[
+  {
+    "id": "chardon-elbow-connector-24-ce250",
+    "name": "17.5 KV / 24 KV 250A Elbow Connector (24-CE250)",
+    "brandId": "chardon",
+    "groupIds": ["chardon-conectores", "chardon-interfaz-buje"],
+    "imageUrl": "/images/products/chardon-elbow-connector-24-ce250.png",
+    "featured": true
+  },
+  {
+    "id": "chardon-straight-connector-24-cl250",
+    "name": "17.5 KV / 24 KV 250A Straight Connector (24-CL250)",
+    "brandId": "chardon",
+    "groupIds": ["chardon-conectores"],
+    "imageUrl": "/images/products/chardon-straight-connector-24-cl250.png",
+    "featured": true
+  },
+  {
+    "id": "chardon-interfaz-buje-36-dib400",
+    "name": "36KV, 400A Interfaz B Buje del Equipo (36-DIB400)",
+    "brandId": "chardon",
+    "groupIds": ["chardon-interfaz-buje"],
+    "imageUrl": "/images/products/chardon-interfaz-buje-36-dib400.png",
+    "featured": true
+  },
+  {
+    "id": "chardon-ckel",
+    "name": "Interruptor de Rotura de Carga (CKEL)",
+    "brandId": "chardon",
+    "groupIds": ["chardon-interruptores"],
+    "imageUrl": "/images/products/chardon-ckel.png",
+    "featured": true
+  },
+  {
+    "id": "weidmann-carton-form-vall",
+    "name": "Cartón Form Vall",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/weidmann-carton-form-vall.png",
+    "featured": true
+  },
+  {
+    "id": "weidmann-papel-crepe",
+    "name": "Papel Crepé",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/weidmann-papel-crepe.png",
+    "featured": true
+  },
+  {
+    "id": "weidmann-papel-insoldur-diamante",
+    "name": "Papel Insoldur Diamante",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/weidmann-papel-insoldur-diamante.png",
+    "featured": true
+  },
+  {
+    "id": "weidmann-tubos-papel-crepe",
+    "name": "Tubos de Papel Crepé",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/weidmann-tubos-papel-crepe.png",
+    "featured": true
+  },
+  {
+    "id": "abb-boquilla-baja-tension-5-8-600amp",
+    "name": "Boquilla Baja Tensión 5_8_ 600AMP",
+    "brandId": "abb",
+    "groupIds": [],
+    "imageUrl": "/images/products/abb-boquilla-baja-tension-5-8-600amp.png",
+    "featured": true
+  },
+  {
+    "id": "abb-boquilla-tipo-pozo-15-25-28-35kv-200amp",
+    "name": "Boquilla Tipo Pozo 15, 25, 28, 35 KV 200AMP",
+    "brandId": "abb",
+    "groupIds": [],
+    "imageUrl": "/images/products/abb-boquilla-tipo-pozo-15-25-28-35kv-200amp.png",
+    "featured": true
+  },
+  {
+    "id": "abb-cambiador-derivacion-monofasico-100amp",
+    "name": "Cambiador de Derivación Monofásico 100AMP",
+    "brandId": "abb",
+    "groupIds": [],
+    "imageUrl": "/images/products/abb-cambiador-derivacion-monofasico-100amp.png",
+    "featured": true
+  },
+  {
+    "id": "abb-cambiador-derivacion-trifasico-150amp",
+    "name": "Cambiador de Derivación Trifásico 150AMP",
+    "brandId": "abb",
+    "groupIds": [],
+    "imageUrl": "/images/products/abb-cambiador-derivacion-trifasico-150amp.png",
+    "featured": true
+  }
+]

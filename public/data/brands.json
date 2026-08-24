@@ -1,0 +1,12 @@
+[
+  { "id": "chardon", "name": "Chardón", "logoUrl": "/images/brands/chardon.png", "hasGroups": true },
+  { "id": "weidmann", "name": "Weidmann", "logoUrl": "/images/brands/weidmann.png", "hasGroups": false },
+  { "id": "abb", "name": "ABB", "logoUrl": "/images/brands/abb.png", "hasGroups": false },
+  { "id": "simelca", "name": "Simelca", "logoUrl": "/images/brands/simelca.png", "hasGroups": false },
+  { "id": "prolec", "name": "Prolec", "logoUrl": "/images/brands/prolec.png", "hasGroups": false },
+  { "id": "orto", "name": "Orto", "logoUrl": "/images/brands/orto.png", "hasGroups": false },
+  { "id": "condumex", "name": "Condumex", "logoUrl": "/images/brands/condumex.png", "hasGroups": false },
+  { "id": "viat", "name": "Viat", "logoUrl": "/images/brands/viat.png", "hasGroups": false },
+  { "id": "viakon", "name": "Viakon", "logoUrl": "/images/brands/viakon.png", "hasGroups": false },
+  { "id": "mj-family", "name": "The MJ Family of Companies", "logoUrl": "/images/brands/mj-family.png", "hasGroups": false }
+]
