@@ -1,3 +1,49 @@
-<p>products-list works — placeholder (Fase 3)</p>
-<p>Productos cargados: {{ data.products().length }}</p>
-<p>Grupos cargados: {{ data.groups().length }}</p>
+<div class="products-page">
+  <aside class="sidebar">
+    <h2>Ordenar por</h2>
+
+    <label class="sidebar__field">
+      Marca
+      <select
+        [value]="selectedBrand() ?? ''"
+        (change)="selectBrand($any($event.target).value || null)"
+      >
+        <option value="">Todas</option>
+        @for (brand of data.brands(); track brand.id) {
+          <option [value]="brand.id">{{ brand.name }}</option>
+        }
+      </select>
+    </label>
+
+    @if (selectedBrand() === 'chardon') {
+      <label class="sidebar__field">
+        Grupo
+        <select
+          [value]="selectedGroup() ?? ''"
+          (change)="selectGroup($any($event.target).value || null)"
+        >
+          <option value="">Todos</option>
+          @for (group of groupOptions(); track group.id) {
+            <option [value]="group.id">{{ group.name }}</option>
+          }
+        </select>
+      </label>
+    }
+  </aside>
+
+  <section class="results">
+    @if (filteredProducts().length === 0) {
+      <p class="results__empty">No se encontraron productos con estos filtros.</p>
+    } @else {
+      <div class="results__grid">
+        @for (product of visibleProducts(); track product.id) {
+          <app-product-card [product]="product" />
+        }
+      </div>
+    }
+
+    @if (hasMore()) {
+      <div #sentinel class="results__sentinel" aria-hidden="true"></div>
+    }
+  </section>
+</div>
