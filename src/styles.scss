@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Fuentes self-hosted (pendiente: reemplazar con los archivos reales cuando
+// el PM envíe el archivo fuente de Manrope — ver ESPECIFICACIONES.md, sección 11).
+// Los @font-face apuntan a public/fonts/; si el archivo no existe aún,
+// el navegador simplemente cae al fallback sin romper el build.
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  // Paleta corporativa (según capturas del PM)
+  --color-primary: #a11d1d;
+  --color-primary-dark: #7a1414;
+  --color-black: #111111;
+  --color-white: #ffffff;
+  --color-gray-light: #f5f5f5;
+  --color-gray-medium: #dcdcdc;
+
+  // Tipografía
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Manrope', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
