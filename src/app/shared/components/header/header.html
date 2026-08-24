@@ -1,0 +1,17 @@
+<header class="header">
+  <a routerLink="/" class="header__logo">ENTO</a>
+
+  <form class="header__search" (submit)="$event.preventDefault(); onSearchSubmit()">
+    <input
+      type="search"
+      placeholder="Buscar productos..."
+      [value]="searchTerm()"
+      (input)="searchTerm.set($any($event.target).value)"
+    />
+  </form>
+
+  <nav class="header__nav">
+    <a routerLink="/productos">Productos</a>
+    <a href="https://wa.me/523310139492" target="_blank" rel="noopener">Contacto</a>
+  </nav>
+</header>

@@ -1,0 +1,31 @@
+.brand-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.brand-carousel__track {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: max-content;
+  animation: brand-carousel-scroll 30s linear infinite;
+}
+
+.brand-carousel__logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@keyframes brand-carousel-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    // La pista contiene la lista de marcas duplicada (misma cantidad de
+    // elementos dos veces), así que -50% equivale a una copia completa
+    // y el loop se reinicia sin salto visible.
+    transform: translateX(-50%);
+  }
+}

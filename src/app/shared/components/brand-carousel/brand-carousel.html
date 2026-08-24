@@ -1,0 +1,16 @@
+<div class="brand-carousel">
+  <div class="brand-carousel__track">
+    @for (brand of brands(); track brand.id + '-a') {
+      <img class="brand-carousel__logo" [src]="brand.logoUrl" [alt]="brand.name" loading="lazy" />
+    }
+    @for (brand of brands(); track brand.id + '-b') {
+      <img
+        class="brand-carousel__logo"
+        [src]="brand.logoUrl"
+        [alt]="brand.name"
+        aria-hidden="true"
+        loading="lazy"
+      />
+    }
+  </div>
+</div>

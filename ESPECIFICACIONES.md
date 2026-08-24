@@ -166,3 +166,4 @@ Distribuido sobre las 4 semanas acordadas (semana 4 reservada para pruebas/ajust
 - [ ] Confirmar si el filtro de grupo de Chardón es single-select o multi-select.
 ## git
 https://github.com/Betuntun/ENTO-WEB.git
+## nota técnica no prevista en el plan: para probar en runtime tuve que resolver que el dev server de Angular 22 (Vite) rechaza por defecto el header Host: localhost con 400 — se resuelve con --allowed-hosts en ng serve o configurando allowedHosts en angular.json. No lo agregué a angular.json porque es solo para desarrollo local; si quieres que lo dejemos configurado de forma permanente para evitar este paso manual cada vez, dilo y lo agrego.

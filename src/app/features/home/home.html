@@ -1,3 +1,33 @@
-<p>home works — placeholder (Fase 2)</p>
-<p>Productos cargados: {{ data.products().length }}</p>
-<p>Marcas cargadas: {{ data.brands().length }}</p>
+<section class="hero">
+  <div class="hero__content">
+    <h1>
+      Accesorios y aislantes para equipos de media y
+      <span class="hero__highlight">baja tensión</span>
+    </h1>
+    <p>
+      Soluciones confiables que garantizan seguridad, rendimiento y durabilidad en cada
+      instalación
+    </p>
+  </div>
+</section>
+
+@for (section of featuredBrands; track section.brandId) {
+  <section class="brand-section">
+    <h2>{{ section.brandName }}</h2>
+    <h3>Productos</h3>
+
+    <div class="brand-section__grid">
+      @for (product of section.products(); track product.id) {
+        <app-product-card [product]="product" />
+      }
+      <button type="button" class="brand-section__more" (click)="goToBrand(section.brandId)">
+        VER MÁS
+      </button>
+    </div>
+  </section>
+}
+
+<section class="brands-highlight">
+  <h2>Marcas destacadas</h2>
+  <app-brand-carousel [brands]="data.brands()" />
+</section>
