@@ -1,7 +1,11 @@
 .hero {
-  background: var(--color-black);
+  position: relative;
   color: var(--color-white);
   padding: 4rem 1.5rem;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.55) 60%, rgba(0, 0, 0, 0.35) 100%),
+    url('/images/hero/hero-transformador.jpg') center right / cover no-repeat;
+  background-color: var(--color-black);
 }
 
 .hero__content {

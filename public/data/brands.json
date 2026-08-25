@@ -1,12 +1,107 @@
 [
-  { "id": "chardon", "name": "Chardón", "logoUrl": "/images/brands/chardon.png", "hasGroups": true },
-  { "id": "weidmann", "name": "Weidmann", "logoUrl": "/images/brands/weidmann.png", "hasGroups": false },
-  { "id": "abb", "name": "ABB", "logoUrl": "/images/brands/abb.png", "hasGroups": false },
-  { "id": "simelca", "name": "Simelca", "logoUrl": "/images/brands/simelca.png", "hasGroups": false },
-  { "id": "prolec", "name": "Prolec", "logoUrl": "/images/brands/prolec.png", "hasGroups": false },
-  { "id": "orto", "name": "Orto", "logoUrl": "/images/brands/orto.png", "hasGroups": false },
-  { "id": "condumex", "name": "Condumex", "logoUrl": "/images/brands/condumex.png", "hasGroups": false },
-  { "id": "viat", "name": "Viat", "logoUrl": "/images/brands/viat.png", "hasGroups": false },
-  { "id": "viakon", "name": "Viakon", "logoUrl": "/images/brands/viakon.png", "hasGroups": false },
-  { "id": "mj-family", "name": "The MJ Family of Companies", "logoUrl": "/images/brands/mj-family.png", "hasGroups": false }
+  {
+    "id": "abb",
+    "name": "ABB",
+    "logoUrl": "/images/brands/abb.jpeg",
+    "hasGroups": false,
+    "hasProducts": true
+  },
+  {
+    "id": "central-moloney",
+    "name": "Central Moloney",
+    "logoUrl": "/images/brands/central-moloney.jpeg",
+    "hasGroups": false,
+    "hasProducts": true
+  },
+  {
+    "id": "elastotecnica",
+    "name": "Elastotecnica",
+    "logoUrl": "/images/brands/elastotecnica.jpeg",
+    "hasGroups": false,
+    "hasProducts": true
+  },
+  {
+    "id": "simelca",
+    "name": "Simelca",
+    "logoUrl": "/images/brands/simelca.jpeg",
+    "hasGroups": false,
+    "hasProducts": true
+  },
+  {
+    "id": "weidmann",
+    "name": "Weidmann",
+    "logoUrl": "/images/brands/weidmann.jpeg",
+    "hasGroups": false,
+    "hasProducts": true
+  },
+  {
+    "id": "chardon",
+    "name": "Chardón",
+    "logoUrl": "/images/brands/chardon.jpeg",
+    "hasGroups": true,
+    "hasProducts": true
+  },
+  {
+    "id": "condumex",
+    "name": "Condumex",
+    "logoUrl": "/images/brands/condumex.png",
+    "hasGroups": false,
+    "hasProducts": false
+  },
+  {
+    "id": "homac",
+    "name": "Homac",
+    "logoUrl": "/images/brands/homac.jpeg",
+    "hasGroups": false,
+    "hasProducts": false
+  },
+  {
+    "id": "iusa",
+    "name": "Iusa",
+    "logoUrl": "/images/brands/iusa.jpeg",
+    "hasGroups": false,
+    "hasProducts": false
+  },
+  {
+    "id": "kemek",
+    "name": "Kemek",
+    "logoUrl": "/images/brands/kemek.jpeg",
+    "hasGroups": false,
+    "hasProducts": false
+  },
+  {
+    "id": "orto-de-mexico",
+    "name": "Orto de México",
+    "logoUrl": "/images/brands/orto-de-mexico.jpeg",
+    "hasGroups": false,
+    "hasProducts": false
+  },
+  {
+    "id": "prolec-celeco",
+    "name": "Prolec Celeco",
+    "logoUrl": "/images/brands/prolec-celeco.png",
+    "hasGroups": false,
+    "hasProducts": false
+  },
+  {
+    "id": "viakon",
+    "name": "Viakon",
+    "logoUrl": "/images/brands/viakon.jpeg",
+    "hasGroups": false,
+    "hasProducts": false
+  },
+  {
+    "id": "viat-instruments",
+    "name": "Viat Instruments",
+    "logoUrl": "/images/brands/viat-instruments.png",
+    "hasGroups": false,
+    "hasProducts": false
+  },
+  {
+    "id": "hj-family",
+    "name": "The MJ Family of Companies",
+    "logoUrl": "/images/brands/hj-family.jpeg",
+    "hasGroups": false,
+    "hasProducts": false
+  }
 ]

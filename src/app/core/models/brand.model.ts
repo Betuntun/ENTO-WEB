@@ -3,4 +3,5 @@ export interface Brand {
   name: string;
   logoUrl: string;
   hasGroups: boolean;
+  hasProducts: boolean;
 }

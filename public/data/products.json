@@ -1,98 +1,1012 @@
 [
   {
-    "id": "chardon-elbow-connector-24-ce250",
-    "name": "17.5 KV / 24 KV 250A Elbow Connector (24-CE250)",
-    "brandId": "chardon",
-    "groupIds": ["chardon-conectores", "chardon-interfaz-buje"],
-    "imageUrl": "/images/products/chardon-elbow-connector-24-ce250.png",
-    "featured": true
-  },
-  {
-    "id": "chardon-straight-connector-24-cl250",
-    "name": "17.5 KV / 24 KV 250A Straight Connector (24-CL250)",
-    "brandId": "chardon",
-    "groupIds": ["chardon-conectores"],
-    "imageUrl": "/images/products/chardon-straight-connector-24-cl250.png",
-    "featured": true
-  },
-  {
-    "id": "chardon-interfaz-buje-36-dib400",
-    "name": "36KV, 400A Interfaz B Buje del Equipo (36-DIB400)",
-    "brandId": "chardon",
-    "groupIds": ["chardon-interfaz-buje"],
-    "imageUrl": "/images/products/chardon-interfaz-buje-36-dib400.png",
-    "featured": true
-  },
-  {
-    "id": "chardon-ckel",
-    "name": "Interruptor de Rotura de Carga (CKEL)",
-    "brandId": "chardon",
-    "groupIds": ["chardon-interruptores"],
-    "imageUrl": "/images/products/chardon-ckel.png",
-    "featured": true
-  },
-  {
-    "id": "weidmann-carton-form-vall",
-    "name": "Cartón Form Vall",
-    "brandId": "weidmann",
-    "groupIds": [],
-    "imageUrl": "/images/products/weidmann-carton-form-vall.png",
-    "featured": true
-  },
-  {
-    "id": "weidmann-papel-crepe",
-    "name": "Papel Crepé",
-    "brandId": "weidmann",
-    "groupIds": [],
-    "imageUrl": "/images/products/weidmann-papel-crepe.png",
-    "featured": true
-  },
-  {
-    "id": "weidmann-papel-insoldur-diamante",
-    "name": "Papel Insoldur Diamante",
-    "brandId": "weidmann",
-    "groupIds": [],
-    "imageUrl": "/images/products/weidmann-papel-insoldur-diamante.png",
-    "featured": true
-  },
-  {
-    "id": "weidmann-tubos-papel-crepe",
-    "name": "Tubos de Papel Crepé",
-    "brandId": "weidmann",
-    "groupIds": [],
-    "imageUrl": "/images/products/weidmann-tubos-papel-crepe.png",
-    "featured": true
-  },
-  {
-    "id": "abb-boquilla-baja-tension-5-8-600amp",
-    "name": "Boquilla Baja Tensión 5_8_ 600AMP",
+    "id": "boquilla-baja-tension-5-8-600amp",
+    "name": "Boquilla baja tensión 5/8\" 600Amp",
     "brandId": "abb",
     "groupIds": [],
-    "imageUrl": "/images/products/abb-boquilla-baja-tension-5-8-600amp.png",
+    "imageUrl": "/images/products/boquilla-baja-tension-5-8-600amp.png",
     "featured": true
   },
   {
-    "id": "abb-boquilla-tipo-pozo-15-25-28-35kv-200amp",
-    "name": "Boquilla Tipo Pozo 15, 25, 28, 35 KV 200AMP",
+    "id": "boquilla-tipo-pozo-15-25-28-35-kv-200amp",
+    "name": "Boquilla tipo pozo 15, 25,28,35 KV 200Amp",
     "brandId": "abb",
     "groupIds": [],
-    "imageUrl": "/images/products/abb-boquilla-tipo-pozo-15-25-28-35kv-200amp.png",
+    "imageUrl": "/images/products/boquilla-tipo-pozo-15-25-28-35-kv-200amp.png",
     "featured": true
   },
   {
-    "id": "abb-cambiador-derivacion-monofasico-100amp",
-    "name": "Cambiador de Derivación Monofásico 100AMP",
+    "id": "cambiador-de-derivacion-monofasico-100amp",
+    "name": "Cambiador de derivación monofásico 100Amp",
     "brandId": "abb",
     "groupIds": [],
-    "imageUrl": "/images/products/abb-cambiador-derivacion-monofasico-100amp.png",
+    "imageUrl": "/images/products/cambiador-de-derivacion-monofasico-100amp.png",
     "featured": true
   },
   {
-    "id": "abb-cambiador-derivacion-trifasico-150amp",
-    "name": "Cambiador de Derivación Trifásico 150AMP",
+    "id": "cambiador-de-derivacion-trifasico-150amp",
+    "name": "Cambiador de derivación trifásico 150Amp",
     "brandId": "abb",
     "groupIds": [],
-    "imageUrl": "/images/products/abb-cambiador-derivacion-trifasico-150amp.png",
+    "imageUrl": "/images/products/cambiador-de-derivacion-trifasico-150amp.png",
     "featured": true
+  },
+  {
+    "id": "boquilla-tipo-pozo-15-25-35-kv-200a",
+    "name": "Boquilla tipo pozo 15/25/35 KV 200A",
+    "brandId": "central-moloney",
+    "groupIds": [],
+    "imageUrl": "/images/products/boquilla-tipo-pozo-15-25-35-kv-200a.png"
+  },
+  {
+    "id": "boquilla-tipo-pozo-cola-larga-15-25-35-kv-200a",
+    "name": "Boquilla tipo pozo cola larga 15/25/35 KV 200A",
+    "brandId": "central-moloney",
+    "groupIds": [],
+    "imageUrl": "/images/products/boquilla-tipo-pozo-cola-larga-15-25-35-kv-200a.png"
+  },
+  {
+    "id": "conector-tipo-mecanico",
+    "name": "Conector tipo mecánico",
+    "brandId": "elastotecnica",
+    "groupIds": [],
+    "imageUrl": "/images/products/conector-tipo-mecanico.png"
+  },
+  {
+    "id": "cambiador-trifasico-34-5kv-100a",
+    "name": "Cambiador trifásico 34.5KV 100A",
+    "brandId": "simelca",
+    "groupIds": [],
+    "imageUrl": "/images/products/cambiador-trifasico-34-5kv-100a.png"
+  },
+  {
+    "id": "seccionador-trifasico-2-posiciones-34-5kv-300a",
+    "name": "Seccionador trifásico 2 posiciones 34.5KV 300A",
+    "brandId": "simelca",
+    "groupIds": [],
+    "imageUrl": "/images/products/seccionador-trifasico-2-posiciones-34-5kv-300a.png"
+  },
+  {
+    "id": "papel-insoldur-diamante",
+    "name": "Papel insoldur diamante",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/papel-insoldur-diamante.png",
+    "featured": true
+  },
+  {
+    "id": "tubos-de-papel-crepe",
+    "name": "Tubos de papel crepé",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/tubos-de-papel-crepe.png",
+    "featured": true
+  },
+  {
+    "id": "papel-crepe",
+    "name": "Papel crepé",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/papel-crepe.png",
+    "featured": true
+  },
+  {
+    "id": "carton-form-vall",
+    "name": "Cartón form vall",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/carton-form-vall.png",
+    "featured": true
+  },
+  {
+    "id": "15-kv-200a-loadbreak-alimentacion-portatil-a-traves-de-15-lpft200",
+    "name": "15 kV, 200A Loadbreak Alimentación portátil a través de (15-LPFT200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/15-kv-200a-loadbreak-alimentacion-portatil-a-traves-de-15-lpft200.png",
+    "featured": true
+  },
+  {
+    "id": "15-kv-200a-union-de-rotura-de-carga-15-lj200",
+    "name": "15 kV, 200A Unión de rotura de carga (15-LJ200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/15-kv-200a-union-de-rotura-de-carga-15-lj200.png",
+    "featured": true
+  },
+  {
+    "id": "15-kv-codo-de-ruptura-de-carga-de-200-a-15-le200",
+    "name": "15 kV, Codo de ruptura de carga de 200 A (15-LE200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/15-kv-codo-de-ruptura-de-carga-de-200-a-15-le200.png",
+    "featured": true
+  },
+  {
+    "id": "15-25-kv-600-a-900-a-cuerpo-en-t-15-25-tb600",
+    "name": "15/25 kV, 600 A / 900 A, Cuerpo en T (15/25-TB600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/15-25-kv-600-a-900-a-cuerpo-en-t-15-25-tb600.png",
+    "featured": true
+  },
+  {
+    "id": "15-25-kv-600a-buje-de-aparato-15-25-ab600",
+    "name": "15/25 kV, 600A buje de aparato (15/25-AB600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/15-25-kv-600a-buje-de-aparato-15-25-ab600.png"
+  },
+  {
+    "id": "15-25-kv-600a-cruce-de-ruptura-25-dj600",
+    "name": "15/25 kV, 600A Cruce de ruptura (25-DJ600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/15-25-kv-600a-cruce-de-ruptura-25-dj600.png"
+  },
+  {
+    "id": "15-25-kv-600a-deadbreak-buje-separador-25-sob600",
+    "name": "15/25 kV, 600A Deadbreak Buje Separador (25-SOB600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/15-25-kv-600a-deadbreak-buje-separador-25-sob600.png"
+  },
+  {
+    "id": "17-kv-50-kv-17-kv-45-kv-acoplamiento-t-paracis-17-rdta50-17-rdta45",
+    "name": "17 kV / 50 kV/ 17 kV / 45 kV Acoplamiento T Paracis (17-RDTA50/17-RDTA45)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/17-kv-50-kv-17-kv-45-kv-acoplamiento-t-paracis-17-rdta50-17-rdta45.png"
+  },
+  {
+    "id": "17-5-kv-24-kv-630a-cuerpo-en-t-delantero-y-trasero-24fdt630-rdt630",
+    "name": "17,5 kV / 24 kV 630A Cuerpo en T delantero y trasero (24FDT630-RDT630)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/17-5-kv-24-kv-630a-cuerpo-en-t-delantero-y-trasero-24fdt630-rdt630.png"
+  },
+  {
+    "id": "17-5-kv-24-kv-630a-cuerpo-en-t-delantero-y-trasero-grande-24-lfdt630-24-lrdt630",
+    "name": "17,5 kV / 24 kV 630A Cuerpo en T delantero y trasero grande (24-LFDT630 / 24-LRDT630)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/17-5-kv-24-kv-630a-cuerpo-en-t-delantero-y-trasero-grande-24-lfdt630-24-lrdt630.png"
+  },
+  {
+    "id": "24-kv-250a-inserto-de-casquillo-de-ruptura-24-dbi250",
+    "name": "24 kV, 250A inserto de casquillo de ruptura (24-DBI250)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/24-kv-250a-inserto-de-casquillo-de-ruptura-24-dbi250.png"
+  },
+  {
+    "id": "24kv-250a-tapa-protectora-aislada-24-dic250",
+    "name": "24kV, 250A Tapa protectora aislada (24-DIC250)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/24kv-250a-tapa-protectora-aislada-24-dic250.png"
+  },
+  {
+    "id": "24kv-630a-tapa-protectora-aislada-24-dic630",
+    "name": "24kV, 630A Tapa protectora aislada (24-DIC630)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/24kv-630a-tapa-protectora-aislada-24-dic630.png"
+  },
+  {
+    "id": "25-kv-50a-con-casquillo-de-despalamiento-aislado-25-sob200",
+    "name": "25 kV, 50A con casquillo de despalamiento aislado (25-SOB200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/25-kv-50a-con-casquillo-de-despalamiento-aislado-25-sob200.png"
+  },
+  {
+    "id": "25-kv-200a-conector-recto-de-ruptura-25-ds200",
+    "name": "25 kV, 200A Conector recto de ruptura (25-DS200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/25-kv-200a-conector-recto-de-ruptura-25-ds200.png"
+  },
+  {
+    "id": "25-kv-200a-inserto-de-buje-de-ruptura-25-dbi200",
+    "name": "25 kV, 200A Inserto de buje de ruptura (25-DBI200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/25-kv-200a-inserto-de-buje-de-ruptura-25-dbi200.png"
+  },
+  {
+    "id": "25-kv-200a-inserto-de-casquillo-de-rotura-de-carga-25-lbi200",
+    "name": "25 kV, 200A Inserto de casquillo de rotura de carga (25-LBI200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/25-kv-200a-inserto-de-casquillo-de-rotura-de-carga-25-lbi200.png"
+  },
+  {
+    "id": "25-kv-200a-loadbreak-alimentacion-portatil-a-traves-de-25-lpft200",
+    "name": "25 kV, 200A Loadbreak Alimentación Portátil A Través De (25-LPFT200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/25-kv-200a-loadbreak-alimentacion-portatil-a-traves-de-25-lpft200.png"
+  },
+  {
+    "id": "25-kv-inserto-de-alimentacion-de-rotura-de-carga-25-lfti",
+    "name": "25 kV, Inserto de alimentación de rotura de carga (25-LFTI)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/25-kv-inserto-de-alimentacion-de-rotura-de-carga-25-lfti.png"
+  },
+  {
+    "id": "35-kv-200a-loadbreak-codo-gran-interfaz-35l-le200",
+    "name": "35 kV, 200A Loadbreak Codo-Gran Interfaz (35L-LE200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-200a-loadbreak-codo-gran-interfaz-35l-le200.png"
+  },
+  {
+    "id": "35-kv-200a-loadbreak-fuse-codo-35-lfe200",
+    "name": "35 kV, 200A Loadbreak Fuse Codo (35-LFE200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-200a-loadbreak-fuse-codo-35-lfe200.png"
+  },
+  {
+    "id": "35-kv-200a-loadbreak-inserto-a-traves-de-alimentacion-35-lfti",
+    "name": "35 kV, 200A Loadbreak-Inserto a través de alimentación (35-LFTI)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-200a-loadbreak-inserto-a-traves-de-alimentacion-35-lfti.png"
+  },
+  {
+    "id": "35-kv-200a-tapa-protectora-de-rotura-de-carga-35-lic200",
+    "name": "35 kV, 200A Tapa protectora de rotura de carga (35-LIC200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-200a-tapa-protectora-de-rotura-de-carga-35-lic200.png"
+  },
+  {
+    "id": "35-kv-200a-union-de-rotura-de-carga-35-lj200",
+    "name": "35 kV, 200A Unión de rotura de carga (35-LJ200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-200a-union-de-rotura-de-carga-35-lj200.png"
+  },
+  {
+    "id": "35-kv-600a-900a-buje-de-aparato-35-ab600-35-ab900",
+    "name": "35 kV, 600A ,900A Buje de aparato (35-AB600,35-AB900)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-600a-900a-buje-de-aparato-35-ab600-35-ab900.png"
+  },
+  {
+    "id": "35-kv-600a-deadbreak-junction-35-dj600",
+    "name": "35 kV, 600A Deadbreak Junction (35-DJ600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-600a-deadbreak-junction-35-dj600.png"
+  },
+  {
+    "id": "35-kv-600a-cuerpo-en-t-de-ruptura-35-tb600",
+    "name": "35 kV, 600A, cuerpo en T de ruptura (35-TB600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-600a-cuerpo-en-t-de-ruptura-35-tb600.png"
+  },
+  {
+    "id": "35-kv-600a-tapon-de-codo-35-etp600",
+    "name": "35 kV, 600A, tapón de codo (35-ETP600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-600a-tapon-de-codo-35-etp600.png"
+  },
+  {
+    "id": "35-kv-codo-de-rotura-de-carga-200a-35-le200",
+    "name": "35 kV, codo de rotura de carga 200A (35-LE200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-codo-de-rotura-de-carga-200a-35-le200.png"
+  },
+  {
+    "id": "35-kv-inserto-de-buje-de-rotura-de-carga-de-200-a-35-lbi200",
+    "name": "35 kV, inserto de buje de rotura de carga de 200 A (35-LBI200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/35-kv-inserto-de-buje-de-rotura-de-carga-de-200-a-35-lbi200.png"
+  },
+  {
+    "id": "36-kv-630a-cuerpo-en-t-delantero-trasero-36-fdt630-36-rdt630",
+    "name": "36 kV 630A Cuerpo En T Delantero/Trasero (36-FDT630 / 36-RDT630)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/36-kv-630a-cuerpo-en-t-delantero-trasero-36-fdt630-36-rdt630.png"
+  },
+  {
+    "id": "36-kv-630a-interfaz-c-buje-del-equipo-36-dib630",
+    "name": "36 kV, 630A Interfaz C Buje Del Equipo (36-DIB630)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/36-kv-630a-interfaz-c-buje-del-equipo-36-dib630.png"
+  },
+  {
+    "id": "36-102kv-42kv-acoplamiento-t-paradas-36-rdta102-10-42",
+    "name": "36/102kV-42kV Acoplamiento T Paradas (36-RDTA102-10-42)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/36-102kv-42kv-acoplamiento-t-paradas-36-rdta102-10-42.png"
+  },
+  {
+    "id": "36kv-400a-interfaz-b-buje-del-equipo-36-dib400",
+    "name": "36kV, 400A Interfaz B Buje del equipo (36-DIB400)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec",
+      "productos-epoxi"
+    ],
+    "imageUrl": "/images/products/36kv-400a-interfaz-b-buje-del-equipo-36-dib400.png"
+  },
+  {
+    "id": "36kv-630a-tapa-protectora-aislada-36-dic630",
+    "name": "36kV, 630A Tapa protectora aislada (36-DIC630)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/36kv-630a-tapa-protectora-aislada-36-dic630.png"
+  },
+  {
+    "id": "42-kv-1250a-cuerpo-en-t-delantero-y-trasero-42-fdt1250-42-rdt1250",
+    "name": "42 kV, 1250A Cuerpo en T delantero y trasero (42-FDT1250 / 42-RDT1250)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/42-kv-1250a-cuerpo-en-t-delantero-y-trasero-42-fdt1250-42-rdt1250.png"
+  },
+  {
+    "id": "42-kv-1250a-extensor-de-buje-42-be1250",
+    "name": "42 kV, 1250A Extensor de buje (42-BE1250)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/42-kv-1250a-extensor-de-buje-42-be1250.png"
+  },
+  {
+    "id": "42-kv-1250a-union-de-ruptura-muerta-42-dj1250",
+    "name": "42, kV 1250A Unión de ruptura muerta (42-DJ1250)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/42-kv-1250a-union-de-ruptura-muerta-42-dj1250.png"
+  },
+  {
+    "id": "51-kv-134-kv-acoplamiento-t-paraciente-de-sobretensiones-51-rdta134",
+    "name": "51 kV / 134 kV Acoplamiento T Paraciente de sobretensiones (51-RDTA134)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/51-kv-134-kv-acoplamiento-t-paraciente-de-sobretensiones-51-rdta134.png"
+  },
+  {
+    "id": "72-5-kv-1250a-cuerpo-en-t-72-fdt1250-72-rdt1250",
+    "name": "72,5 kV, 1250A cuerpo en T (72-FDT1250,72-RDT1250)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/72-5-kv-1250a-cuerpo-en-t-72-fdt1250-72-rdt1250.png"
+  },
+  {
+    "id": "72-5-kv-196kv-10ka-t-body",
+    "name": "72,5 kV/196kV-10kA T-Body",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/72-5-kv-196kv-10ka-t-body.png"
+  },
+  {
+    "id": "250a-24kv-clase-interfaz-a-buje-de-equipo-24-dib250",
+    "name": "250A, 24kV Clase Interfaz A Buje De Equipo (24-DIB250)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/250a-24kv-clase-interfaz-a-buje-de-equipo-24-dib250.png"
+  },
+  {
+    "id": "600-900a-25-kv-y-35-kv-buje-separador-con-conexion-a-tierra",
+    "name": "600/900A, 25 kV y 35 kV Buje Separador con conexión a tierra",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/600-900a-25-kv-y-35-kv-buje-separador-con-conexion-a-tierra.png"
+  },
+  {
+    "id": "600a-35kv-tapa-protectora-aislada-35-dic600",
+    "name": "600A, 35kV Tapa protectora aislada (35-DIC600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/600a-35kv-tapa-protectora-aislada-35-dic600.png"
+  },
+  {
+    "id": "630a-1250a-t-body-hasta-36-kv-ancho-rango",
+    "name": "630A, 1250A T-Body, hasta 36 kV (ancho rango)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/630a-1250a-t-body-hasta-36-kv-ancho-rango.png"
+  },
+  {
+    "id": "accesorios-y-piezas-de-repuesto-de-la-clase-deadbreak-de-15kv-y-25kv",
+    "name": "Accesorios y piezas de repuesto de la clase Deadbreak de 15kV y 25kV",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/accesorios-y-piezas-de-repuesto-de-la-clase-deadbreak-de-15kv-y-25kv.png"
+  },
+  {
+    "id": "acoplamiento-de-26-kv-66-kv-t-para-la-sobretensiones-26-rdta66-26-rdta72-10",
+    "name": "Acoplamiento de 26 kV / 66 kV T para la sobretensiones (26-RDTA66 / 26-RDTA72-10)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/acoplamiento-de-26-kv-66-kv-t-para-la-sobretensiones-26-rdta66-26-rdta72-10.png"
+  },
+  {
+    "id": "acoplamiento-de-34-kv-85-kv-t-paradas-34-rdta85-34-rdta95-10",
+    "name": "Acoplamiento de 34 kV / 85 kV T Paradas (34-RDTA85/34-RDTA95-10)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/acoplamiento-de-34-kv-85-kv-t-paradas-34-rdta85-34-rdta95-10.png"
+  },
+  {
+    "id": "acoplamiento-de-36-102kv-t-paradas-36-rdta102-10",
+    "name": "Acoplamiento de 36/102kV T Paradas (36-RDTA102-10)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/acoplamiento-de-36-102kv-t-paradas-36-rdta102-10.png"
+  },
+  {
+    "id": "adaptador-de-escudo-sadp",
+    "name": "Adaptador de escudo (SADP)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/adaptador-de-escudo-sadp.png"
+  },
+  {
+    "id": "alimentacion-portatil-de-35-kv-200a-loadbreak-35-lpft200",
+    "name": "Alimentación portátil de 35 kV, 200A Loadbreak (35-LPFT200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/alimentacion-portatil-de-35-kv-200a-loadbreak-35-lpft200.png"
+  },
+  {
+    "id": "barra-de-prueba-de-voltaje-de-interfaz-c-vtr",
+    "name": "Barra de prueba de voltaje de interfaz C (VTR)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/barra-de-prueba-de-voltaje-de-interfaz-c-vtr.png"
+  },
+  {
+    "id": "buje-de-descompaste-aislado-de-ruptura-de-carga-de-15-25-y-35-kv-sob200",
+    "name": "Buje de descompaste aislado de ruptura de carga de 15, 25 y 35 kV (SOB200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/buje-de-descompaste-aislado-de-ruptura-de-carga-de-15-25-y-35-kv-sob200.png"
+  },
+  {
+    "id": "buje-de-puesta-a-tierra-de-15-y-25-kv-200-a-loadbreak-15-gb200-25-gb200",
+    "name": "Buje de puesta a tierra de 15 y 25 kV, 200 A Loadbreak (15-GB200,25-GB200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/buje-de-puesta-a-tierra-de-15-y-25-kv-200-a-loadbreak-15-gb200-25-gb200.png"
+  },
+  {
+    "id": "buje-integral-de-rotura-de-carga-de-15-kv-200-a-15-lib130-15-lib185",
+    "name": "Buje integral de rotura de carga de 15 kV, 200 A (15-LIB130, 15-LIB185)",
+    "brandId": "chardon",
+    "groupIds": [
+      "componentes-para-transformadores"
+    ],
+    "imageUrl": "/images/products/buje-integral-de-rotura-de-carga-de-15-kv-200-a-15-lib130-15-lib185.png"
+  },
+  {
+    "id": "codo-de-15-kv-25-kv-y-35-kv-15-25-35-lea",
+    "name": "Codo de 15 kV, 25 kV y 35 kV (15/25/35-LEA)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/codo-de-15-kv-25-kv-y-35-kv-15-25-35-lea.png"
+  },
+  {
+    "id": "codo-de-conexion-a-tierra-de-hasta-35-kv-200a-15-gle200-25-gle200-35-gle200",
+    "name": "Codo de conexión a tierra de hasta 35 kV, 200A (15-GLE200, 25-GLE200, 35-GLE200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/codo-de-conexion-a-tierra-de-hasta-35-kv-200a-15-gle200-25-gle200-35-gle200.png"
+  },
+  {
+    "id": "codo-de-fusible-de-rotura-de-carga-de-25-kv-200-a-25-lfe200",
+    "name": "Codo de fusible de rotura de carga de 25 kV, 200 A (25-LFE200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/codo-de-fusible-de-rotura-de-carga-de-25-kv-200-a-25-lfe200.png"
+  },
+  {
+    "id": "codo-de-ruptura-de-25-kv-200-a-25-de200",
+    "name": "Codo de ruptura de 25 kV, 200 A (25-DE200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/codo-de-ruptura-de-25-kv-200-a-25-de200.png"
+  },
+  {
+    "id": "codo-de-ruptura-de-carga-de-25-kv-200-a-25-le200",
+    "name": "Codo de ruptura de carga de 25 kV, 200 A (25-LE200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/codo-de-ruptura-de-carga-de-25-kv-200-a-25-le200.png"
+  },
+  {
+    "id": "codo-del-fusible-de-rotura-de-carga-de-15-kv-200a-15-lfe200",
+    "name": "Codo del fusible de rotura de carga de 15 kV, 200A (15-LFE200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/codo-del-fusible-de-rotura-de-carga-de-15-kv-200a-15-lfe200.png"
+  },
+  {
+    "id": "conector-de-baja-tension-sumergible-slvc",
+    "name": "Conector de baja tensión sumergible (SLVC)",
+    "brandId": "chardon",
+    "groupIds": [
+      "otros-productos"
+    ],
+    "imageUrl": "/images/products/conector-de-baja-tension-sumergible-slvc.png"
+  },
+  {
+    "id": "conector-de-codo-de-17-5-kv-24-kv-250a-24-ce250",
+    "name": "Conector de codo de 17,5 kV / 24 kV 250A (24-CE250)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/conector-de-codo-de-17-5-kv-24-kv-250a-24-ce250.png"
+  },
+  {
+    "id": "conector-de-interfaz-tipo-c-de-24-36-42-kv-630-1250a-24-tcp630-36-tcp630-42-tcp1250-42-tcp630",
+    "name": "Conector de interfaz tipo C de 24, 36, 42 kV 630/1250A (24-TCP630, 36-TCP630, 42-TCP1250, 42-TCP630)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/conector-de-interfaz-tipo-c-de-24-36-42-kv-630-1250a-24-tcp630-36-tcp630-42-tcp1250-42-tcp630.png"
+  },
+  {
+    "id": "conector-de-perno-de-cillado-sbc",
+    "name": "Conector de perno de cillado (SBC)",
+    "brandId": "chardon",
+    "groupIds": [
+      "otros-productos"
+    ],
+    "imageUrl": "/images/products/conector-de-perno-de-cillado-sbc.png"
+  },
+  {
+    "id": "conector-recto-de-17-5-kv-24-kv-250a-24-cl250",
+    "name": "Conector recto de 17,5 kV / 24 kV 250A (24-CL250)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/conector-recto-de-17-5-kv-24-kv-250a-24-cl250.png"
+  },
+  {
+    "id": "cuerpo-en-t-delantero-de-36kv-400a-36-fdt400",
+    "name": "Cuerpo en T delantero de 36kV 400A (36-FDT400)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/cuerpo-en-t-delantero-de-36kv-400a-36-fdt400.png"
+  },
+  {
+    "id": "cuerpo-en-t-delantero-de-42-kv-630a-cuerpo-en-t-trasero-de-42-kv-630a-42-fdt630-42-rdt630",
+    "name": "Cuerpo en T delantero de 42 kV, 630A / Cuerpo en T trasero de 42 kV, 630A (42-FDT630 / 42-RDT630)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/cuerpo-en-t-delantero-de-42-kv-630a-cuerpo-en-t-trasero-de-42-kv-630a-42-fdt630-42-rdt630.png"
+  },
+  {
+    "id": "dispositivo-de-seguridad-de-soporte-de-cable-csr",
+    "name": "Dispositivo de seguridad de soporte de cable (CSR)",
+    "brandId": "chardon",
+    "groupIds": [
+      "otros-productos"
+    ],
+    "imageUrl": "/images/products/dispositivo-de-seguridad-de-soporte-de-cable-csr.png"
+  },
+  {
+    "id": "empalme-de-28kv-200a-deadbreak-28-dj200",
+    "name": "Empalme de 28kV, 200A Deadbreak (28-DJ200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/empalme-de-28kv-200a-deadbreak-28-dj200.png"
+  },
+  {
+    "id": "enchufe-aislado-de-200a-15-25-28-y-35-kv",
+    "name": "Enchufe aislado de 200A, 15/25/28 y 35 kV",
+    "brandId": "chardon",
+    "groupIds": [
+      "componentes-para-transformadores"
+    ],
+    "imageUrl": "/images/products/enchufe-aislado-de-200a-15-25-28-y-35-kv.png"
+  },
+  {
+    "id": "enlace-de-aislamiento-chil",
+    "name": "Enlace de aislamiento (CHIL)",
+    "brandId": "chardon",
+    "groupIds": [
+      "componentes-para-transformadores"
+    ],
+    "imageUrl": "/images/products/enlace-de-aislamiento-chil.png"
+  },
+  {
+    "id": "enlaces-de-puente",
+    "name": "Enlaces de puente",
+    "brandId": "chardon",
+    "groupIds": [
+      "otros-productos"
+    ],
+    "imageUrl": "/images/products/enlaces-de-puente.png"
+  },
+  {
+    "id": "extensor-de-casquillo-de-25kv-y-35-kv-600-900a-25-be600-900-35-be600-900",
+    "name": "Extensor de casquillo de 25kV y 35 kV 600/900A (25-BE600/900, 35-BE600/900)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/extensor-de-casquillo-de-25kv-y-35-kv-600-900a-25-be600-900-35-be600-900.png"
+  },
+  {
+    "id": "inserto-de-alimentacion-de-ruptura-de-carga-de-15-kv-15-lfti",
+    "name": "Inserto de alimentación de ruptura de carga de 15 kV (15-LFTI)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/inserto-de-alimentacion-de-ruptura-de-carga-de-15-kv-15-lfti.png"
+  },
+  {
+    "id": "inserto-de-buje-de-15-kv-200a-15-lbi200",
+    "name": "Inserto de buje de 15 kV, 200A (15-LBI200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/inserto-de-buje-de-15-kv-200a-15-lbi200.png"
+  },
+  {
+    "id": "interruptor-de-rotura-de-carga-ckel",
+    "name": "Interruptor de rotura de carga (CKEL)",
+    "brandId": "chardon",
+    "groupIds": [
+      "reconectadores"
+    ],
+    "imageUrl": "/images/products/interruptor-de-rotura-de-carga-ckel.png"
+  },
+  {
+    "id": "junta-recta-retractil-en-frio-iec-hasta-42-kv-cscj",
+    "name": "Junta recta retráctil en frío IEC, hasta 42 kV (CSCJ)",
+    "brandId": "chardon",
+    "groupIds": [
+      "terminaciones-contractiles-en-frio",
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/junta-recta-retractil-en-frio-iec-hasta-42-kv-cscj.png"
+  },
+  {
+    "id": "junta-recta-retractil-en-frio-ieee-ansi-hasta-35-kv-cscj",
+    "name": "Junta recta retráctil en frío IEEE/ANSI, hasta 35 kV (CSCJ)",
+    "brandId": "chardon",
+    "groupIds": [
+      "terminaciones-contractiles-en-frio"
+    ],
+    "imageUrl": "/images/products/junta-recta-retractil-en-frio-ieee-ansi-hasta-35-kv-cscj.png"
+  },
+  {
+    "id": "kit-de-puesta-a-tierra-gkt",
+    "name": "Kit de puesta a tierra (GKT)",
+    "brandId": "chardon",
+    "groupIds": [
+      "otros-productos"
+    ],
+    "imageUrl": "/images/products/kit-de-puesta-a-tierra-gkt.png"
+  },
+  {
+    "id": "llave-en-t-llave-hex-de-5-16-pulgadas-ct-tw001",
+    "name": "Llave en T Llave hex de 5/16 pulgadas (CT-TW001)",
+    "brandId": "chardon",
+    "groupIds": [
+      "otros-productos"
+    ],
+    "imageUrl": "/images/products/llave-en-t-llave-hex-de-5-16-pulgadas-ct-tw001.png"
+  },
+  {
+    "id": "piezas-de-repuesto-35-kv-600a",
+    "name": "Piezas de repuesto 35 kV, 600A",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/piezas-de-repuesto-35-kv-600a.png"
+  },
+  {
+    "id": "portafusibles-montado-en-la-pared-lateral-y-cubierta-chbon",
+    "name": "Portafusibles montado en la pared lateral y cubierta (CHBON)",
+    "brandId": "chardon",
+    "groupIds": [
+      "componentes-para-transformadores"
+    ],
+    "imageUrl": "/images/products/portafusibles-montado-en-la-pared-lateral-y-cubierta-chbon.png"
+  },
+  {
+    "id": "pozo-de-buje-200a-hasta-35-kv-ch200bw",
+    "name": "Pozo de buje 200A, hasta 35 kV (CH200BW)",
+    "brandId": "chardon",
+    "groupIds": [
+      "componentes-para-transformadores"
+    ],
+    "imageUrl": "/images/products/pozo-de-buje-200a-hasta-35-kv-ch200bw.png"
+  },
+  {
+    "id": "pozo-de-buje-integral-200a-hasta-35-kv-ch200bwc",
+    "name": "Pozo de buje integral 200A, hasta 35 kV (CH200BWC)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/pozo-de-buje-integral-200a-hasta-35-kv-ch200bwc.png"
+  },
+  {
+    "id": "reser-de-epoxy-solido-ckmr",
+    "name": "Reser de epoxy sólido (CKMR)",
+    "brandId": "chardon",
+    "groupIds": [
+      "reconectadores"
+    ],
+    "imageUrl": "/images/products/reser-de-epoxy-solido-ckmr.png"
+  },
+  {
+    "id": "sello-de-chaqueta-retractil-en-frio-cjs",
+    "name": "Sello de chaqueta retráctil en frío (CJS)",
+    "brandId": "chardon",
+    "groupIds": [
+      "terminaciones-contractiles-en-frio"
+    ],
+    "imageUrl": "/images/products/sello-de-chaqueta-retractil-en-frio-cjs.png"
+  },
+  {
+    "id": "tapa-protectora-aislada-de-15-25-kv-600a-25-dic600",
+    "name": "Tapa protectora aislada de 15/25 kV, 600A (25-DIC600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/tapa-protectora-aislada-de-15-25-kv-600a-25-dic600.png"
+  },
+  {
+    "id": "tapa-protectora-aislada-de-25kv-200a-25-dic200",
+    "name": "Tapa protectora aislada de 25kV, 200A (25-DIC200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/tapa-protectora-aislada-de-25kv-200a-25-dic200.png"
+  },
+  {
+    "id": "tapa-protectora-de-rotura-de-carga-de-15-25-y-35-kv-200a-lic200",
+    "name": "Tapa protectora de rotura de carga de 15, 25 y 35 kV, 200A (LIC200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/tapa-protectora-de-rotura-de-carga-de-15-25-y-35-kv-200a-lic200.png"
+  },
+  {
+    "id": "tapa-protectora-de-rotura-de-carga-de-25-kv-200a-25-lic200",
+    "name": "Tapa protectora de rotura de carga de 25 kV, 200A (25-LIC200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/tapa-protectora-de-rotura-de-carga-de-25-kv-200a-25-lic200.png"
+  },
+  {
+    "id": "tapon-de-codo-de-15-kv-y-tapon-de-grifo-reductor-de-rotura-de-carga-de-15-kv-15-etp600-15-lrtp600",
+    "name": "Tapón de codo de 15 kV y tapón de grifo reductor de rotura de carga de 15 kV (15-ETP600, 15-LRTP600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/tapon-de-codo-de-15-kv-y-tapon-de-grifo-reductor-de-rotura-de-carga-de-15-kv-15-etp600-15-lrtp600.png"
+  },
+  {
+    "id": "tapon-de-codo-de-25-kv-y-tapon-de-grifo-reductor-de-rotura-de-carga-de-25-kv-25-etp600-25-lrtp600",
+    "name": "Tapón de codo de 25 kV y tapón de grifo reductor de rotura de carga de 25 kV (25-ETP600, 25-LRTP600)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/tapon-de-codo-de-25-kv-y-tapon-de-grifo-reductor-de-rotura-de-carga-de-25-kv-25-etp600-25-lrtp600.png"
+  },
+  {
+    "id": "terminacion-de-contraccion-en-frio-interior-iec-hasta-42-kv-csti",
+    "name": "Terminación de contracción en frío interior IEC, hasta 42 kV (CSTI)",
+    "brandId": "chardon",
+    "groupIds": [
+      "terminaciones-contractiles-en-frio",
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/terminacion-de-contraccion-en-frio-interior-iec-hasta-42-kv-csti.png"
+  },
+  {
+    "id": "terminacion-de-contraccion-en-frio-interior-ieee-ansi-hasta-35-kv-csti",
+    "name": "Terminación de contracción en frío interior IEEE/ANSI, hasta 35 kV (CSTI)",
+    "brandId": "chardon",
+    "groupIds": [
+      "terminaciones-contractiles-en-frio",
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/terminacion-de-contraccion-en-frio-interior-ieee-ansi-hasta-35-kv-csti.png"
+  },
+  {
+    "id": "terminacion-de-deslizamiento-exterior-de-72-5-kv-soto",
+    "name": "Terminación de deslizamiento exterior de 72,5 kV (SOTO)",
+    "brandId": "chardon",
+    "groupIds": [
+      "terminaciones-contractiles-en-frio",
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/terminacion-de-deslizamiento-exterior-de-72-5-kv-soto.png"
+  },
+  {
+    "id": "terminacion-retractil-en-frio-al-aire-libre-iec-hasta-42-kv-csto",
+    "name": "Terminación retráctil en frío al aire libre IEC, hasta 42 kV (CSTO)",
+    "brandId": "chardon",
+    "groupIds": [
+      "terminaciones-contractiles-en-frio",
+      "accesorios-para-cables-iec"
+    ],
+    "imageUrl": "/images/products/terminacion-retractil-en-frio-al-aire-libre-iec-hasta-42-kv-csto.png"
+  },
+  {
+    "id": "terminacion-retractil-en-frio-al-aire-libre-ieee-ansi-hasta-35-kv-csto",
+    "name": "Terminación retráctil en frío al aire libre IEEE/ANSI, hasta 35 kV (CSTO)",
+    "brandId": "chardon",
+    "groupIds": [
+      "terminaciones-contractiles-en-frio",
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/terminacion-retractil-en-frio-al-aire-libre-ieee-ansi-hasta-35-kv-csto.png"
+  },
+  {
+    "id": "union-de-rotura-de-carga-de-25-kv-200-a-25-lj200",
+    "name": "Unión de rotura de carga de 25 kV,200 A (25-LJ200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/union-de-rotura-de-carga-de-25-kv-200-a-25-lj200.png"
+  },
+  {
+    "id": "union-multipunto-mpj",
+    "name": "Unión multipunto (MPJ)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/union-multipunto-mpj.png"
   }
 ]

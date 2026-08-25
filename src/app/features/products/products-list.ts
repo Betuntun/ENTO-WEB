@@ -38,6 +38,10 @@ export class ProductsList {
   protected readonly selectedGroup = computed(() => this.queryParams().get('group'));
   protected readonly searchTerm = computed(() => this.queryParams().get('q') ?? '');
 
+  protected readonly filterableBrands = computed(() =>
+    this.data.brands().filter((brand) => brand.hasProducts),
+  );
+
   protected readonly groupOptions = computed(() =>
     this.selectedBrand() === 'chardon' ? this.data.groupsForBrand('chardon')() : [],
   );

@@ -1,5 +1,37 @@
 [
-  { "id": "chardon-conectores", "brandId": "chardon", "name": "Conectores" },
-  { "id": "chardon-interruptores", "brandId": "chardon", "name": "Interruptores" },
-  { "id": "chardon-interfaz-buje", "brandId": "chardon", "name": "Interfaz de buje" }
+  {
+    "id": "accesorios-para-cables-ieee-ansi",
+    "brandId": "chardon",
+    "name": "Accesorios para cables IEEE/ANSI"
+  },
+  {
+    "id": "accesorios-para-cables-iec",
+    "brandId": "chardon",
+    "name": "Accesorios para cables IEC"
+  },
+  {
+    "id": "productos-epoxi",
+    "brandId": "chardon",
+    "name": "Productos Epoxi"
+  },
+  {
+    "id": "componentes-para-transformadores",
+    "brandId": "chardon",
+    "name": "Componentes para transformadores"
+  },
+  {
+    "id": "otros-productos",
+    "brandId": "chardon",
+    "name": "Otros productos"
+  },
+  {
+    "id": "reconectadores",
+    "brandId": "chardon",
+    "name": "Reconectadores"
+  },
+  {
+    "id": "terminaciones-contractiles-en-frio",
+    "brandId": "chardon",
+    "name": "Terminaciones contráctiles en frío"
+  }
 ]

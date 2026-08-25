@@ -9,7 +9,7 @@
         (change)="selectBrand($any($event.target).value || null)"
       >
         <option value="">Todas</option>
-        @for (brand of data.brands(); track brand.id) {
+        @for (brand of filterableBrands(); track brand.id) {
           <option [value]="brand.id">{{ brand.name }}</option>
         }
       </select>

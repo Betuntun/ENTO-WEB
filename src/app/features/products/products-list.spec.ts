@@ -7,8 +7,8 @@ import { ProductsList } from './products-list';
 import { Brand, Group, Product } from '../../core/models';
 
 const BRANDS: Brand[] = [
-  { id: 'chardon', name: 'Chardón', logoUrl: '', hasGroups: true },
-  { id: 'abb', name: 'ABB', logoUrl: '', hasGroups: false },
+  { id: 'chardon', name: 'Chardón', logoUrl: '', hasGroups: true, hasProducts: true },
+  { id: 'abb', name: 'ABB', logoUrl: '', hasGroups: false, hasProducts: true },
 ];
 
 const GROUPS: Group[] = [{ id: 'g1', brandId: 'chardon', name: 'Conectores' }];
