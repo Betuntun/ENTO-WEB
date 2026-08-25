@@ -1,0 +1,21 @@
+<div class="product-modal-backdrop">
+  <button
+    type="button"
+    class="product-modal-backdrop__dismiss"
+    aria-label="Cerrar"
+    (click)="close()"
+  ></button>
+
+  <div class="product-modal" role="dialog" aria-modal="true" [attr.aria-label]="product().name">
+    <button type="button" class="product-modal__close" aria-label="Cerrar" (click)="close()">
+      &times;
+    </button>
+
+    <div class="product-modal__image">
+      <img [src]="product().imageUrl" [alt]="product().name" />
+    </div>
+
+    <p class="product-modal__brand">{{ brandName() }}</p>
+    <h2 class="product-modal__name">{{ product().name }}</h2>
+  </div>
+</div>

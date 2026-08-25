@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { Brand } from '../../../core/models';
 
 @Component({
@@ -8,4 +8,14 @@ import { Brand } from '../../../core/models';
 })
 export class BrandCarousel {
   readonly brands = input.required<Brand[]>();
+
+  readonly topRow = computed(() => {
+    const half = Math.ceil(this.brands().length / 2);
+    return this.brands().slice(0, half);
+  });
+
+  readonly bottomRow = computed(() => {
+    const half = Math.ceil(this.brands().length / 2);
+    return this.brands().slice(half);
+  });
 }

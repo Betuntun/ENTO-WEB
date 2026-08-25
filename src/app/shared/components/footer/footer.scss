@@ -8,10 +8,9 @@
 }
 
 .footer__brand {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 2rem;
-  color: var(--color-primary);
+  height: 96px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer__block {
@@ -26,10 +25,18 @@
   }
 
   a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     color: var(--color-white);
     text-decoration: none;
     font-size: 0.9rem;
     opacity: 0.9;
+
+    svg {
+      flex-shrink: 0;
+      color: var(--color-primary);
+    }
 
     &:hover {
       opacity: 1;

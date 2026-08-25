@@ -1,27 +1,20 @@
-import { Component, effect, inject } from '@angular/core';
+import { Component, computed, effect, inject, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from '../../core/services/data.service';
 import { SeoService, SITE_URL } from '../../core/services/seo.service';
+import { Product } from '../../core/models';
 import { ProductCard } from '../../shared/components/product-card/product-card';
+import { ProductModal } from '../../shared/components/product-modal/product-modal';
 import { BrandCarousel } from '../../shared/components/brand-carousel/brand-carousel';
 
-interface FeaturedBrandSection {
-  brandId: string;
-  brandName: string;
-}
-
-const FEATURED_BRANDS: FeaturedBrandSection[] = [
-  { brandId: 'chardon', brandName: 'Chardón' },
-  { brandId: 'weidmann', brandName: 'Weidmann' },
-  { brandId: 'abb', brandName: 'ABB' },
-];
+const FEATURED_BRAND_IDS = ['chardon', 'weidmann', 'abb'];
 
 const HERO_DESCRIPTION =
   'Accesorios y aislantes para equipos de media y baja tensión. Soluciones confiables que garantizan seguridad, rendimiento y durabilidad en cada instalación.';
 
 @Component({
   selector: 'app-home',
-  imports: [ProductCard, BrandCarousel],
+  imports: [ProductCard, ProductModal, BrandCarousel],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
@@ -30,10 +23,15 @@ export class Home {
   private readonly seo = inject(SeoService);
   protected readonly data = inject(DataService);
 
-  protected readonly featuredBrands = FEATURED_BRANDS.map((section) => ({
-    ...section,
-    products: this.data.featuredByBrand(section.brandId, 4),
-  }));
+  protected readonly selectedProduct = signal<Product | null>(null);
+
+  protected readonly featuredBrands = computed(() =>
+    FEATURED_BRAND_IDS.map((brandId) => ({
+      brandId,
+      brand: this.data.brands().find((b) => b.id === brandId),
+      products: this.data.featuredByBrand(brandId, 4)(),
+    })),
+  );
 
   constructor() {
     this.seo.update({
@@ -60,7 +58,7 @@ export class Home {
     });
 
     effect(() => {
-      const products = this.featuredBrands.flatMap((section) => section.products());
+      const products = this.featuredBrands().flatMap((section) => section.products);
       if (products.length === 0) {
         return;
       }
@@ -79,5 +77,13 @@ export class Home {
 
   goToBrand(brandId: string): void {
     this.router.navigate(['/productos'], { queryParams: { brand: brandId } });
+  }
+
+  openProduct(product: Product): void {
+    this.selectedProduct.set(product);
+  }
+
+  closeProduct(): void {
+    this.selectedProduct.set(null);
   }
 }

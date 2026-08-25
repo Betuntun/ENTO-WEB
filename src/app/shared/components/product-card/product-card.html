@@ -1,4 +1,10 @@
-<article class="product-card">
+<article
+  class="product-card"
+  role="button"
+  tabindex="0"
+  (click)="activated.emit(product())"
+  (keydown.enter)="activated.emit(product())"
+>
   <div class="product-card__image">
     <img [src]="product().imageUrl" [alt]="product().name" loading="lazy" />
   </div>

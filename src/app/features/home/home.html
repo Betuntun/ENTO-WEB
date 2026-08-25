@@ -1,27 +1,37 @@
 <section class="hero">
   <div class="hero__content">
     <h1>
-      Accesorios y aislantes para equipos de media y
-      <span class="hero__highlight">baja tensión</span>
+      Accesorios y aislantes<br />
+      para equipos de <span class="hero__highlight">media</span><br />
+      y <span class="hero__highlight">baja tensión</span>
     </h1>
     <p>
-      Soluciones confiables que garantizan seguridad, rendimiento y durabilidad en cada
-      instalación
+      Soluciones confiables que garantizan seguridad,<br />
+      rendimiento y durabilidad en cada instalación
     </p>
   </div>
 </section>
 
-@for (section of featuredBrands; track section.brandId) {
+@for (section of featuredBrands(); track section.brandId) {
   <section class="brand-section">
-    <h2>{{ section.brandName }}</h2>
-    <h3>Productos</h3>
+    <div class="brand-section__header">
+      @if (section.brand) {
+        <img
+          class="brand-section__logo"
+          [src]="section.brand.logoUrl"
+          [alt]="section.brand.name"
+        />
+      }
+      <h3>Productos</h3>
+    </div>
 
     <div class="brand-section__grid">
-      @for (product of section.products(); track product.id) {
-        <app-product-card [product]="product" />
+      @for (product of section.products; track product.id) {
+        <app-product-card [product]="product" (activated)="openProduct($event)" />
       }
       <button type="button" class="brand-section__more" (click)="goToBrand(section.brandId)">
-        VER MÁS
+        <span class="brand-section__more-text">Ver más</span>
+        <span class="brand-section__more-arrow" aria-hidden="true">&rarr;</span>
       </button>
     </div>
   </section>
@@ -31,3 +41,7 @@
   <h2>Marcas destacadas</h2>
   <app-brand-carousel [brands]="data.brands()" />
 </section>
+
+@if (selectedProduct()) {
+  <app-product-modal [product]="selectedProduct()!" (closed)="closeProduct()" />
+}

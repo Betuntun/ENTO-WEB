@@ -37,7 +37,7 @@
     } @else {
       <div class="results__grid">
         @for (product of visibleProducts(); track product.id) {
-          <app-product-card [product]="product" />
+          <app-product-card [product]="product" (activated)="openProduct($event)" />
         }
       </div>
     }
@@ -47,3 +47,7 @@
     }
   </section>
 </div>
+
+@if (selectedProduct()) {
+  <app-product-modal [product]="selectedProduct()!" (closed)="closeProduct()" />
+}

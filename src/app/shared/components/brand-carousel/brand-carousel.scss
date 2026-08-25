@@ -1,4 +1,7 @@
 .brand-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   overflow: hidden;
   width: 100%;
 }
@@ -8,7 +11,14 @@
   align-items: center;
   gap: 2.5rem;
   width: max-content;
-  animation: brand-carousel-scroll 30s linear infinite;
+}
+
+.brand-carousel__track--left {
+  animation: brand-carousel-scroll-left 30s linear infinite;
+}
+
+.brand-carousel__track--right {
+  animation: brand-carousel-scroll-right 26s linear infinite;
 }
 
 .brand-carousel__logo {
@@ -18,7 +28,7 @@
   flex-shrink: 0;
 }
 
-@keyframes brand-carousel-scroll {
+@keyframes brand-carousel-scroll-left {
   from {
     transform: translateX(0);
   }
@@ -27,5 +37,14 @@
     // elementos dos veces), así que -50% equivale a una copia completa
     // y el loop se reinicia sin salto visible.
     transform: translateX(-50%);
+  }
+}
+
+@keyframes brand-carousel-scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
   }
 }

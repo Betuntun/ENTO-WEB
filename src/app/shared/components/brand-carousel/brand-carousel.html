@@ -1,16 +1,19 @@
 <div class="brand-carousel">
-  <div class="brand-carousel__track">
-    @for (brand of brands(); track brand.id + '-a') {
+  <div class="brand-carousel__track brand-carousel__track--left">
+    @for (brand of topRow(); track brand.id + '-a') {
       <img class="brand-carousel__logo" [src]="brand.logoUrl" [alt]="brand.name" loading="lazy" />
     }
-    @for (brand of brands(); track brand.id + '-b') {
-      <img
-        class="brand-carousel__logo"
-        [src]="brand.logoUrl"
-        alt=""
-        aria-hidden="true"
-        loading="lazy"
-      />
+    @for (brand of topRow(); track brand.id + '-b') {
+      <img class="brand-carousel__logo" [src]="brand.logoUrl" alt="" aria-hidden="true" loading="lazy" />
+    }
+  </div>
+
+  <div class="brand-carousel__track brand-carousel__track--right">
+    @for (brand of bottomRow(); track brand.id + '-a') {
+      <img class="brand-carousel__logo" [src]="brand.logoUrl" [alt]="brand.name" loading="lazy" />
+    }
+    @for (brand of bottomRow(); track brand.id + '-b') {
+      <img class="brand-carousel__logo" [src]="brand.logoUrl" alt="" aria-hidden="true" loading="lazy" />
     }
   </div>
 </div>

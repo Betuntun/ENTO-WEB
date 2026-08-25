@@ -14,13 +14,15 @@ import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
 import { DataService } from '../../core/services/data.service';
 import { SeoService } from '../../core/services/seo.service';
+import { Product } from '../../core/models';
 import { ProductCard } from '../../shared/components/product-card/product-card';
+import { ProductModal } from '../../shared/components/product-modal/product-modal';
 
 const PAGE_SIZE = 20;
 
 @Component({
   selector: 'app-products-list',
-  imports: [ProductCard],
+  imports: [ProductCard, ProductModal],
   templateUrl: './products-list.html',
   styleUrl: './products-list.scss',
 })
@@ -30,6 +32,8 @@ export class ProductsList {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly seo = inject(SeoService);
   protected readonly data = inject(DataService);
+
+  protected readonly selectedProduct = signal<Product | null>(null);
 
   private readonly queryParams = toSignal(this.route.queryParamMap, {
     initialValue: this.route.snapshot.queryParamMap,
@@ -134,6 +138,14 @@ export class ProductsList {
 
   selectGroup(groupId: string | null): void {
     this.navigateWithFilters({ group: groupId });
+  }
+
+  openProduct(product: Product): void {
+    this.selectedProduct.set(product);
+  }
+
+  closeProduct(): void {
+    this.selectedProduct.set(null);
   }
 
   private navigateWithFilters(changes: Record<string, string | null>): void {

@@ -1,18 +1,37 @@
 <header class="header">
-  <a routerLink="/" class="header__logo">ENTO</a>
+  <a routerLink="/" class="header__logo">
+    <img src="/images/brands/ento-logo.png" alt="ENTO Aislantes e Ingeniería" />
+  </a>
 
   <form class="header__search" (submit)="$event.preventDefault(); onSearchSubmit()">
+    <svg
+      class="header__search-icon"
+      viewBox="0 0 24 24"
+      width="18"
+      height="18"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      aria-hidden="true"
+    >
+      <circle cx="11" cy="11" r="7" />
+      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+    </svg>
     <input
       type="search"
       placeholder="Buscar productos..."
       aria-label="Buscar productos"
       [value]="searchTerm()"
-      (input)="searchTerm.set($any($event.target).value)"
+      (input)="onSearchInput($any($event.target).value)"
     />
   </form>
 
   <nav class="header__nav">
-    <a routerLink="/productos">Productos</a>
+    @if (isOnProductsPage()) {
+      <a routerLink="/">Inicio</a>
+    } @else {
+      <a routerLink="/productos">Productos</a>
+    }
     <a href="https://wa.me/523310139492" target="_blank" rel="noopener">Contacto</a>
   </nav>
 </header>

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { Product } from '../../../core/models';
 
 @Component({
@@ -8,4 +8,5 @@ import { Product } from '../../../core/models';
 })
 export class ProductCard {
   readonly product = input.required<Product>();
+  readonly activated = output<Product>();
 }
