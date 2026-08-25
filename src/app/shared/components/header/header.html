@@ -5,6 +5,7 @@
     <input
       type="search"
       placeholder="Buscar productos..."
+      aria-label="Buscar productos"
       [value]="searchTerm()"
       (input)="searchTerm.set($any($event.target).value)"
     />

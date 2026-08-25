@@ -24,6 +24,20 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:description', content: data.description });
     this.meta.updateTag({ property: 'og:url', content: url });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
+    this.setCanonical(url);
+  }
+
+  private setCanonical(url: string): void {
+    // La URL canónica ignora los query params de filtro (?brand=, ?group=, ?q=) a
+    // propósito: todas esas variantes de /productos deben canonicalizar a la misma
+    // página base para evitar contenido duplicado ante los buscadores.
+    let link = this.document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!link) {
+      link = this.document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      this.document.head.appendChild(link);
+    }
+    link.setAttribute('href', url);
   }
 
   setJsonLd(id: string, json: unknown): void {

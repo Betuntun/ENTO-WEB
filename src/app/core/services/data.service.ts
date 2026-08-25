@@ -50,10 +50,6 @@ export class DataService {
     });
   }
 
-  productsByGroup(groupId: string) {
-    return computed(() => this.products().filter((p) => p.groupIds.includes(groupId)));
-  }
-
   groupsForBrand(brandId: string) {
     return computed(() => this.groups().filter((g) => g.brandId === brandId));
   }

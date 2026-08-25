@@ -1,5 +1,6 @@
 import {
   Component,
+  DestroyRef,
   ElementRef,
   computed,
   effect,
@@ -35,7 +36,12 @@ export class ProductsList {
   });
 
   protected readonly selectedBrand = computed(() => this.queryParams().get('brand'));
-  protected readonly selectedGroup = computed(() => this.queryParams().get('group'));
+  // El filtro de grupo solo tiene efecto cuando la marca activa es Chardón (única con grupos).
+  // Así, una URL con ?group=x sin ?brand=chardon (ej. compartida a mano) no deja un filtro
+  // "fantasma" activo que no se refleje en el sidebar.
+  protected readonly selectedGroup = computed(() =>
+    this.selectedBrand() === 'chardon' ? this.queryParams().get('group') : null,
+  );
   protected readonly searchTerm = computed(() => this.queryParams().get('q') ?? '');
 
   protected readonly filterableBrands = computed(() =>
@@ -106,10 +112,11 @@ export class ProductsList {
 
     effect(() => {
       const el = this.sentinel()?.nativeElement;
+      this.observer?.disconnect();
+      this.observer = null;
       if (!el || !isPlatformBrowser(this.platformId)) {
         return;
       }
-      this.observer?.disconnect();
       this.observer = new IntersectionObserver((entries) => {
         if (entries.some((entry) => entry.isIntersecting) && this.hasMore()) {
           this.visibleCount.update((n) => Math.min(n + PAGE_SIZE, this.filteredProducts().length));
@@ -117,6 +124,8 @@ export class ProductsList {
       });
       this.observer.observe(el);
     });
+
+    inject(DestroyRef).onDestroy(() => this.observer?.disconnect());
   }
 
   selectBrand(brandId: string | null): void {
