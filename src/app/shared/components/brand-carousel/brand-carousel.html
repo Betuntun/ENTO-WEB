@@ -1,19 +1,27 @@
 <div class="brand-carousel">
   <div class="brand-carousel__track brand-carousel__track--left">
     @for (brand of topRow(); track brand.id + '-a') {
-      <img class="brand-carousel__logo" [src]="brand.logoUrl" [alt]="brand.name" loading="lazy" />
+      <div class="brand-carousel__card">
+        <img class="brand-carousel__logo" [src]="brand.logoUrl" [alt]="brand.name" loading="lazy" />
+      </div>
     }
     @for (brand of topRow(); track brand.id + '-b') {
-      <img class="brand-carousel__logo" [src]="brand.logoUrl" alt="" aria-hidden="true" loading="lazy" />
+      <div class="brand-carousel__card" aria-hidden="true">
+        <img class="brand-carousel__logo" [src]="brand.logoUrl" alt="" loading="lazy" />
+      </div>
     }
   </div>
 
   <div class="brand-carousel__track brand-carousel__track--right">
     @for (brand of bottomRow(); track brand.id + '-a') {
-      <img class="brand-carousel__logo" [src]="brand.logoUrl" [alt]="brand.name" loading="lazy" />
+      <div class="brand-carousel__card">
+        <img class="brand-carousel__logo" [src]="brand.logoUrl" [alt]="brand.name" loading="lazy" />
+      </div>
     }
     @for (brand of bottomRow(); track brand.id + '-b') {
-      <img class="brand-carousel__logo" [src]="brand.logoUrl" alt="" aria-hidden="true" loading="lazy" />
+      <div class="brand-carousel__card" aria-hidden="true">
+        <img class="brand-carousel__logo" [src]="brand.logoUrl" alt="" loading="lazy" />
+      </div>
     }
   </div>
 </div>

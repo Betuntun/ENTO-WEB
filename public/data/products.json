@@ -1008,5 +1008,21 @@
       "accesorios-para-cables-ieee-ansi"
     ],
     "imageUrl": "/images/products/union-multipunto-mpj.png"
+  },
+  {
+    "id": "weidmann-pendiente-1",
+    "name": "Papel insoldur diamante (pendiente producto real)",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/papel-insoldur-diamante.png",
+    "featured": true
+  },
+  {
+    "id": "abb-pendiente-1",
+    "name": "Boquilla baja tensión 5/8\" 600Amp (pendiente producto real)",
+    "brandId": "abb",
+    "groupIds": [],
+    "imageUrl": "/images/products/boquilla-baja-tension-5-8-600amp.png",
+    "featured": true
   }
 ]

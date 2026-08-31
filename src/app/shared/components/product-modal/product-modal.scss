@@ -58,17 +58,19 @@
 
 .product-modal__image {
   width: 100%;
-  max-height: min(45vh, 320px);
+  max-height: min(50vh, 360px);
   min-height: 0;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 
   img {
+    display: block;
     max-width: 100%;
-    max-height: 100%;
+    max-height: min(50vh, 360px);
+    width: auto;
+    height: auto;
     object-fit: contain;
   }
 }
