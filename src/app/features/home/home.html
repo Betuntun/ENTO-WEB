@@ -31,23 +31,10 @@
       @for (product of section.products; track product.id) {
         <app-product-card [product]="product" (activated)="openProduct($event)" />
       }
-      <button
-        type="button"
-        class="brand-section__more brand-section__more--mobile"
-        (click)="goToBrand(section.brandId)"
-      >
+      <button type="button" class="brand-section__more" (click)="goToBrand(section.brandId)">
         <span class="brand-section__more-text">Ver más</span>
         <span class="brand-section__more-arrow" aria-hidden="true">&rarr;</span>
       </button>
-    </div>
-
-    <div class="brand-section__more-wrap">
-      <div class="brand-section__more-inner">
-        <button type="button" class="brand-section__more" (click)="goToBrand(section.brandId)">
-          <span class="brand-section__more-text">Ver más</span>
-          <span class="brand-section__more-arrow" aria-hidden="true">&rarr;</span>
-        </button>
-      </div>
     </div>
   </section>
 }
