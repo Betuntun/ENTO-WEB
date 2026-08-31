@@ -42,10 +42,12 @@
     </div>
 
     <div class="brand-section__more-wrap">
-      <button type="button" class="brand-section__more" (click)="goToBrand(section.brandId)">
-        <span class="brand-section__more-text">Ver más</span>
-        <span class="brand-section__more-arrow" aria-hidden="true">&rarr;</span>
-      </button>
+      <div class="brand-section__more-inner">
+        <button type="button" class="brand-section__more" (click)="goToBrand(section.brandId)">
+          <span class="brand-section__more-text">Ver más</span>
+          <span class="brand-section__more-arrow" aria-hidden="true">&rarr;</span>
+        </button>
+      </div>
     </div>
   </section>
 }
