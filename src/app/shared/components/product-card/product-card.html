@@ -8,5 +8,6 @@
   <div class="product-card__image">
     <img [src]="product().imageUrl" [alt]="product().name" loading="lazy" />
   </div>
+  <p class="product-card__brand">{{ brandName() }}</p>
   <p class="product-card__name">{{ product().name }}</p>
 </article>

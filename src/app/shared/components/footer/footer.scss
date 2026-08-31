@@ -1,16 +1,28 @@
 .footer {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
-  padding: 2.5rem 1.5rem;
+  gap: 3rem;
+  padding: 3rem 2rem;
   background: var(--color-black);
   color: var(--color-white);
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2.5rem 1.25rem;
+  }
 }
 
 .footer__brand {
   height: 96px;
   width: auto;
   object-fit: contain;
+
+  @media (max-width: 640px) {
+    height: 120px;
+  }
 }
 
 .footer__block {
@@ -18,10 +30,18 @@
   flex-direction: column;
   gap: 0.5rem;
 
+  @media (max-width: 640px) {
+    align-items: center;
+  }
+
   h3 {
     margin: 0 0 0.25rem;
     font-family: var(--font-display);
     font-size: 1rem;
+
+    @media (max-width: 640px) {
+      font-size: 1.25rem;
+    }
   }
 
   a {
@@ -31,7 +51,6 @@
     color: var(--color-white);
     text-decoration: none;
     font-size: 0.9rem;
-    opacity: 0.9;
 
     svg {
       flex-shrink: 0;
@@ -39,8 +58,16 @@
     }
 
     &:hover {
-      opacity: 1;
       text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 1.1rem;
+
+      svg {
+        width: 22px;
+        height: 22px;
+      }
     }
   }
 }

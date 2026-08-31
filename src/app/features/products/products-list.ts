@@ -12,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
-import { DataService } from '../../core/services/data.service';
+import { DataService, sortChardonFirst } from '../../core/services/data.service';
 import { SeoService } from '../../core/services/seo.service';
 import { Product } from '../../core/models';
 import { ProductCard } from '../../shared/components/product-card/product-card';
@@ -61,7 +61,7 @@ export class ProductsList {
     const groupId = this.selectedGroup();
     const term = this.searchTerm().trim().toLowerCase();
 
-    let list = brandId ? this.data.productsByBrand(brandId)() : this.data.products();
+    let list = brandId ? this.data.productsByBrand(brandId)() : sortChardonFirst(this.data.products());
 
     if (groupId) {
       list = list.filter((p) => p.groupIds.includes(groupId));

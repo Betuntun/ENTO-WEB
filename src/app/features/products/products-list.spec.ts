@@ -50,9 +50,9 @@ async function createComponent(queryParams: Record<string, string>) {
 }
 
 describe('ProductsList filtering', () => {
-  it('shows all products when no filters are active', async () => {
+  it('shows all products with Chardón first when no filters are active', async () => {
     const component = await createComponent({});
-    expect(component['filteredProducts']().map((p) => p.id)).toEqual(['p1', 'p2', 'p3']);
+    expect(component['filteredProducts']().map((p) => p.id)).toEqual(['p2', 'p3', 'p1']);
   });
 
   it('filters by brand', async () => {

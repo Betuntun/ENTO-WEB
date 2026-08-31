@@ -1,3 +1,4 @@
+import { DOCUMENT } from '@angular/common';
 import { Component, computed, inject, signal } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -11,6 +12,7 @@ import { filter, map } from 'rxjs';
 })
 export class Header {
   private readonly router = inject(Router);
+  private readonly document = inject(DOCUMENT);
 
   readonly searchTerm = signal('');
 
@@ -47,5 +49,11 @@ export class Header {
       queryParams: { q: q.trim() || null },
       queryParamsHandling: 'merge',
     });
+  }
+
+  scrollToContact(): void {
+    // El footer vive en el shell (app.html), montado en toda ruta, así que
+    // no hace falta navegar — solo desplazar hasta él.
+    this.document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });
   }
 }

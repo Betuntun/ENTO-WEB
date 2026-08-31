@@ -9,6 +9,12 @@ export function sortChardonMultiGroupFirst(products: Product[]): Product[] {
   return [...multiGroup, ...rest];
 }
 
+export function sortChardonFirst(products: Product[]): Product[] {
+  const chardon = products.filter((p) => p.brandId === 'chardon');
+  const rest = products.filter((p) => p.brandId !== 'chardon');
+  return [...chardon, ...rest];
+}
+
 @Injectable({ providedIn: 'root' })
 export class DataService {
   private readonly http = inject(HttpClient);

@@ -16,11 +16,13 @@
   <section class="brand-section">
     <div class="brand-section__header">
       @if (section.brand) {
-        <img
-          class="brand-section__logo"
-          [src]="section.brand.logoUrl"
-          [alt]="section.brand.name"
-        />
+        <div class="brand-section__logo-wrap">
+          <img
+            class="brand-section__logo"
+            [src]="section.brand.logoUrl"
+            [alt]="section.brand.name"
+          />
+        </div>
       }
       <h3>Productos</h3>
     </div>

@@ -32,6 +32,6 @@
     } @else {
       <a routerLink="/productos">Productos</a>
     }
-    <a href="https://wa.me/523310139492" target="_blank" rel="noopener">Contacto</a>
+    <a href="#footer" (click)="$event.preventDefault(); scrollToContact()">Contacto</a>
   </nav>
 </header>

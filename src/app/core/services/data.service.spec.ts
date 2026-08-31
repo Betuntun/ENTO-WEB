@@ -1,8 +1,8 @@
 import { Product } from '../models';
-import { sortChardonMultiGroupFirst } from './data.service';
+import { sortChardonFirst, sortChardonMultiGroupFirst } from './data.service';
 
-function makeProduct(id: string, groupIds: string[]): Product {
-  return { id, name: id, brandId: 'chardon', groupIds, imageUrl: '' };
+function makeProduct(id: string, groupIds: string[], brandId = 'chardon'): Product {
+  return { id, name: id, brandId, groupIds, imageUrl: '' };
 }
 
 describe('sortChardonMultiGroupFirst', () => {
@@ -25,5 +25,18 @@ describe('sortChardonMultiGroupFirst', () => {
     const result = sortChardonMultiGroupFirst([singleA, multiA, singleB, multiB]);
 
     expect(result.map((p) => p.id)).toEqual(['multiA', 'multiB', 'singleA', 'singleB']);
+  });
+});
+
+describe('sortChardonFirst', () => {
+  it('places all Chardón products before other brands', () => {
+    const abb = makeProduct('abb1', [], 'abb');
+    const chardonA = makeProduct('chardonA', [], 'chardon');
+    const weidmann = makeProduct('weidmann1', [], 'weidmann');
+    const chardonB = makeProduct('chardonB', [], 'chardon');
+
+    const result = sortChardonFirst([abb, chardonA, weidmann, chardonB]);
+
+    expect(result.map((p) => p.id)).toEqual(['chardonA', 'chardonB', 'abb1', 'weidmann1']);
   });
 });
