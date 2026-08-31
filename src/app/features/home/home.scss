@@ -51,6 +51,14 @@
   color: var(--color-primary);
 }
 
+.hero__divider {
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 1rem 0;
+  background: var(--color-primary);
+}
+
 .hero__cta {
   display: inline-flex;
   align-items: center;
