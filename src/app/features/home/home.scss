@@ -125,11 +125,10 @@
 
 .brand-section__grid {
   display: grid;
-  // Ancho de columna fijo (no 1fr): el grid añade filas según haga falta,
-  // pero el margen derecho de la sección nunca se ve afectado por cuántos
-  // productos + botón "Ver más" haya (4, 5, o más).
-  grid-template-columns: repeat(auto-fill, 160px);
-  justify-content: start;
+  // 5 columnas elásticas (1fr): el grid siempre ocupa el 100% del ancho de
+  // .brand-section, igual que el header — así el margen derecho coincide
+  // exacto sin importar si hay 4 o 5 productos + botón "Ver más".
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.25rem;
 
   @media (max-width: 640px) {
