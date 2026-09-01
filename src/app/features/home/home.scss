@@ -125,7 +125,11 @@
 
 .brand-section__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  // Ancho de columna fijo (no 1fr): el grid añade filas según haga falta,
+  // pero el margen derecho de la sección nunca se ve afectado por cuántos
+  // productos + botón "Ver más" haya (4, 5, o más).
+  grid-template-columns: repeat(auto-fill, 160px);
+  justify-content: start;
   gap: 1.25rem;
 
   @media (max-width: 640px) {

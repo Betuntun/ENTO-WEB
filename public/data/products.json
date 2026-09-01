@@ -40,7 +40,7 @@
   },
   {
     "id": "boquilla-tipo-pozo-cola-larga-15-25-35-kv-200a",
-    "name": "Boquilla tipo pozo cola larga 15/25/35 KV 200A",
+    "name": "Boquilla tipo pozo cola larga 15:25:35 KV 200A",
     "brandId": "central-moloney",
     "groupIds": [],
     "imageUrl": "/images/products/boquilla-tipo-pozo-cola-larga-15-25-35-kv-200a.png"
@@ -54,14 +54,14 @@
   },
   {
     "id": "cambiador-trifasico-34-5kv-100a",
-    "name": "Cambiador trifásico 34.5KV 100A",
+    "name": "Cambiador trifásico 34,5KV 100A",
     "brandId": "simelca",
     "groupIds": [],
     "imageUrl": "/images/products/cambiador-trifasico-34-5kv-100a.png"
   },
   {
     "id": "seccionador-trifasico-2-posiciones-34-5kv-300a",
-    "name": "Seccionador trifásico 2 posiciones 34.5KV 300A",
+    "name": "Seccionador trifásico 2 posiciones 34,5KV 300A",
     "brandId": "simelca",
     "groupIds": [],
     "imageUrl": "/images/products/seccionador-trifasico-2-posiciones-34-5kv-300a.png"
@@ -76,7 +76,7 @@
   },
   {
     "id": "tubos-de-papel-crepe",
-    "name": "Tubos de papel crepé",
+    "name": "Tubos de papel crepé",
     "brandId": "weidmann",
     "groupIds": [],
     "imageUrl": "/images/products/tubos-de-papel-crepe.png",
@@ -84,7 +84,7 @@
   },
   {
     "id": "papel-crepe",
-    "name": "Papel crepé",
+    "name": "Papel crepé",
     "brandId": "weidmann",
     "groupIds": [],
     "imageUrl": "/images/products/papel-crepe.png",
@@ -92,7 +92,7 @@
   },
   {
     "id": "carton-form-vall",
-    "name": "Cartón form vall",
+    "name": "Cartón form vall",
     "brandId": "weidmann",
     "groupIds": [],
     "imageUrl": "/images/products/carton-form-vall.png",
@@ -130,7 +130,7 @@
   },
   {
     "id": "15-25-kv-600-a-900-a-cuerpo-en-t-15-25-tb600",
-    "name": "15/25 kV, 600 A / 900 A, Cuerpo en T (15/25-TB600)",
+    "name": "15:25 kV, 600 A : 900 A, Cuerpo en T (15:25-TB600)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
@@ -140,7 +140,7 @@
   },
   {
     "id": "15-25-kv-600a-buje-de-aparato-15-25-ab600",
-    "name": "15/25 kV, 600A buje de aparato (15/25-AB600)",
+    "name": "15:25 kV, 600A buje de aparato (15:25-AB600)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
@@ -149,7 +149,7 @@
   },
   {
     "id": "15-25-kv-600a-cruce-de-ruptura-25-dj600",
-    "name": "15/25 kV, 600A Cruce de ruptura (25-DJ600)",
+    "name": "15:25 kV, 600A Cruce de ruptura (25-DJ600)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
@@ -158,7 +158,7 @@
   },
   {
     "id": "15-25-kv-600a-deadbreak-buje-separador-25-sob600",
-    "name": "15/25 kV, 600A Deadbreak Buje Separador (25-SOB600)",
+    "name": "15:25 kV, 600A Deadbreak Buje Separador (25-SOB600)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
@@ -167,7 +167,7 @@
   },
   {
     "id": "17-kv-50-kv-17-kv-45-kv-acoplamiento-t-paracis-17-rdta50-17-rdta45",
-    "name": "17 kV / 50 kV/ 17 kV / 45 kV Acoplamiento T Paracis (17-RDTA50/17-RDTA45)",
+    "name": "17 kV : 50 kV; 17 kV : 45 kV Acoplamiento T Paracis (17-RDTA50:17-RDTA45)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -176,7 +176,7 @@
   },
   {
     "id": "17-5-kv-24-kv-630a-cuerpo-en-t-delantero-y-trasero-24fdt630-rdt630",
-    "name": "17,5 kV / 24 kV 630A Cuerpo en T delantero y trasero (24FDT630-RDT630)",
+    "name": "17,5 kV : 24 kV 630A Cuerpo en T delantero y trasero (24FDT630-RDT630)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -185,7 +185,7 @@
   },
   {
     "id": "17-5-kv-24-kv-630a-cuerpo-en-t-delantero-y-trasero-grande-24-lfdt630-24-lrdt630",
-    "name": "17,5 kV / 24 kV 630A Cuerpo en T delantero y trasero grande (24-LFDT630 / 24-LRDT630)",
+    "name": "17,5 kV : 24 kV 630A Cuerpo en T delantero y trasero grande (24-LFDT630 : 24-LRDT630)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -374,7 +374,7 @@
   },
   {
     "id": "36-kv-630a-cuerpo-en-t-delantero-trasero-36-fdt630-36-rdt630",
-    "name": "36 kV 630A Cuerpo En T Delantero/Trasero (36-FDT630 / 36-RDT630)",
+    "name": "36 kV 630A Cuerpo En T Delantero:Trasero (36-FDT630 : 36-RDT630)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -392,7 +392,7 @@
   },
   {
     "id": "36-102kv-42kv-acoplamiento-t-paradas-36-rdta102-10-42",
-    "name": "36/102kV-42kV Acoplamiento T Paradas (36-RDTA102-10-42)",
+    "name": "36:102kV-42kV Acoplamiento T Paradas (36-RDTA102-10-42)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -420,7 +420,7 @@
   },
   {
     "id": "42-kv-1250a-cuerpo-en-t-delantero-y-trasero-42-fdt1250-42-rdt1250",
-    "name": "42 kV, 1250A Cuerpo en T delantero y trasero (42-FDT1250 / 42-RDT1250)",
+    "name": "42 kV, 1250A Cuerpo en T delantero y trasero (42-FDT1250 : 42-RDT1250)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -447,7 +447,7 @@
   },
   {
     "id": "51-kv-134-kv-acoplamiento-t-paraciente-de-sobretensiones-51-rdta134",
-    "name": "51 kV / 134 kV Acoplamiento T Paraciente de sobretensiones (51-RDTA134)",
+    "name": "51 kV : 134 kV Acoplamiento T Paraciente de sobretensiones (51-RDTA134)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -465,7 +465,7 @@
   },
   {
     "id": "72-5-kv-196kv-10ka-t-body",
-    "name": "72,5 kV/196kV-10kA T-Body",
+    "name": "72,5 kV:196kV-10kA T-Body",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -483,7 +483,7 @@
   },
   {
     "id": "600-900a-25-kv-y-35-kv-buje-separador-con-conexion-a-tierra",
-    "name": "600/900A, 25 kV y 35 kV Buje Separador con conexión a tierra",
+    "name": "600:900A, 25 kV y 35 kV Buje Separador con conexión a tierra",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
@@ -519,7 +519,7 @@
   },
   {
     "id": "acoplamiento-de-26-kv-66-kv-t-para-la-sobretensiones-26-rdta66-26-rdta72-10",
-    "name": "Acoplamiento de 26 kV / 66 kV T para la sobretensiones (26-RDTA66 / 26-RDTA72-10)",
+    "name": "Acoplamiento de 26 kV : 66 kV T para la sobretensiones (26-RDTA66 : 26-RDTA72-10)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -528,7 +528,7 @@
   },
   {
     "id": "acoplamiento-de-34-kv-85-kv-t-paradas-34-rdta85-34-rdta95-10",
-    "name": "Acoplamiento de 34 kV / 85 kV T Paradas (34-RDTA85/34-RDTA95-10)",
+    "name": "Acoplamiento de 34 kV : 85 kV T Paradas (34-RDTA85:34-RDTA95-10)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -537,7 +537,7 @@
   },
   {
     "id": "acoplamiento-de-36-102kv-t-paradas-36-rdta102-10",
-    "name": "Acoplamiento de 36/102kV T Paradas (36-RDTA102-10)",
+    "name": "Acoplamiento de 36:102kV T Paradas (36-RDTA102-10)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -600,7 +600,7 @@
   },
   {
     "id": "codo-de-15-kv-25-kv-y-35-kv-15-25-35-lea",
-    "name": "Codo de 15 kV, 25 kV y 35 kV (15/25/35-LEA)",
+    "name": "Codo de 15 kV, 25 kV y 35 kV (15:25:35-LEA)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
@@ -663,7 +663,7 @@
   },
   {
     "id": "conector-de-codo-de-17-5-kv-24-kv-250a-24-ce250",
-    "name": "Conector de codo de 17,5 kV / 24 kV 250A (24-CE250)",
+    "name": "Conector de codo de 17,5 kV : 24 kV 250A (24-CE250)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -672,7 +672,7 @@
   },
   {
     "id": "conector-de-interfaz-tipo-c-de-24-36-42-kv-630-1250a-24-tcp630-36-tcp630-42-tcp1250-42-tcp630",
-    "name": "Conector de interfaz tipo C de 24, 36, 42 kV 630/1250A (24-TCP630, 36-TCP630, 42-TCP1250, 42-TCP630)",
+    "name": "Conector de interfaz tipo C de 24, 36, 42 kV 630:1250A (24-TCP630, 36-TCP630, 42-TCP1250, 42-TCP630)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -690,7 +690,7 @@
   },
   {
     "id": "conector-recto-de-17-5-kv-24-kv-250a-24-cl250",
-    "name": "Conector recto de 17,5 kV / 24 kV 250A (24-CL250)",
+    "name": "Conector recto de 17,5 kV : 24 kV 250A (24-CL250)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -708,7 +708,7 @@
   },
   {
     "id": "cuerpo-en-t-delantero-de-42-kv-630a-cuerpo-en-t-trasero-de-42-kv-630a-42-fdt630-42-rdt630",
-    "name": "Cuerpo en T delantero de 42 kV, 630A / Cuerpo en T trasero de 42 kV, 630A (42-FDT630 / 42-RDT630)",
+    "name": "Cuerpo en T delantero de 42 kV, 630A | Cuerpo en T trasero de 42 kV, 630A (42-FDT630 : 42-RDT630)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-iec"
@@ -735,7 +735,7 @@
   },
   {
     "id": "enchufe-aislado-de-200a-15-25-28-y-35-kv",
-    "name": "Enchufe aislado de 200A, 15/25/28 y 35 kV",
+    "name": "Enchufe aislado de 200A, 15:25:28 y 35 kV",
     "brandId": "chardon",
     "groupIds": [
       "componentes-para-transformadores"
@@ -762,7 +762,7 @@
   },
   {
     "id": "extensor-de-casquillo-de-25kv-y-35-kv-600-900a-25-be600-900-35-be600-900",
-    "name": "Extensor de casquillo de 25kV y 35 kV 600/900A (25-BE600/900, 35-BE600/900)",
+    "name": "Extensor de casquillo de 25kV y 35 kV 600:900A (25-BE600:900, 35-BE600:900)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
@@ -808,7 +808,7 @@
   },
   {
     "id": "junta-recta-retractil-en-frio-ieee-ansi-hasta-35-kv-cscj",
-    "name": "Junta recta retráctil en frío IEEE/ANSI, hasta 35 kV (CSCJ)",
+    "name": "Junta recta retráctil en frío IEEE:ANSI, hasta 35 kV (CSCJ)",
     "brandId": "chardon",
     "groupIds": [
       "terminaciones-contractiles-en-frio"
@@ -826,7 +826,7 @@
   },
   {
     "id": "llave-en-t-llave-hex-de-5-16-pulgadas-ct-tw001",
-    "name": "Llave en T Llave hex de 5/16 pulgadas (CT-TW001)",
+    "name": "Llave en T Llave hex de 5:16 pulgadas (CT-TW001)",
     "brandId": "chardon",
     "groupIds": [
       "otros-productos"
@@ -889,7 +889,7 @@
   },
   {
     "id": "tapa-protectora-aislada-de-15-25-kv-600a-25-dic600",
-    "name": "Tapa protectora aislada de 15/25 kV, 600A (25-DIC600)",
+    "name": "Tapa protectora aislada de 15:25 kV, 600A (25-DIC600)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
@@ -953,7 +953,7 @@
   },
   {
     "id": "terminacion-de-contraccion-en-frio-interior-ieee-ansi-hasta-35-kv-csti",
-    "name": "Terminación de contracción en frío interior IEEE/ANSI, hasta 35 kV (CSTI)",
+    "name": "Terminación de contracción en frío interior IEEE:ANSI, hasta 35 kV (CSTI)",
     "brandId": "chardon",
     "groupIds": [
       "terminaciones-contractiles-en-frio",
@@ -983,7 +983,7 @@
   },
   {
     "id": "terminacion-retractil-en-frio-al-aire-libre-ieee-ansi-hasta-35-kv-csto",
-    "name": "Terminación retráctil en frío al aire libre IEEE/ANSI, hasta 35 kV (CSTO)",
+    "name": "Terminación retráctil en frío al aire libre IEEE:ANSI, hasta 35 kV (CSTO)",
     "brandId": "chardon",
     "groupIds": [
       "terminaciones-contractiles-en-frio",
