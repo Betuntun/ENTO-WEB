@@ -15,6 +15,14 @@ export function sortChardonFirst(products: Product[]): Product[] {
   return [...chardon, ...rest];
 }
 
+// Las URLs en los JSON de datos empiezan con "/" (raíz del dominio), lo cual
+// ignora el <base href> cuando el sitio se publica bajo una subruta (p. ej.
+// GitHub Pages en /ENTO-WEB/). Se vuelven relativas para que el navegador las
+// resuelva contra el base href actual.
+function stripLeadingSlash(url: string): string {
+  return url.startsWith('/') ? url.slice(1) : url;
+}
+
 @Injectable({ providedIn: 'root' })
 export class DataService {
   private readonly http = inject(HttpClient);
@@ -40,8 +48,10 @@ export class DataService {
         firstValueFrom(this.http.get<Brand[]>('data/brands.json')),
         firstValueFrom(this.http.get<Group[]>('data/groups.json')),
       ]).then(([products, brands, groups]) => {
-        this.productsState.set(products);
-        this.brandsState.set(brands);
+        this.productsState.set(
+          products.map((p) => ({ ...p, imageUrl: stripLeadingSlash(p.imageUrl) })),
+        );
+        this.brandsState.set(brands.map((b) => ({ ...b, logoUrl: stripLeadingSlash(b.logoUrl) })));
         this.groupsState.set(groups);
       });
     }
