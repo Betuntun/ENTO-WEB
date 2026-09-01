@@ -36,9 +36,9 @@ export class DataService {
   load(): Promise<void> {
     if (!this.loadPromise) {
       this.loadPromise = Promise.all([
-        firstValueFrom(this.http.get<Product[]>('/data/products.json')),
-        firstValueFrom(this.http.get<Brand[]>('/data/brands.json')),
-        firstValueFrom(this.http.get<Group[]>('/data/groups.json')),
+        firstValueFrom(this.http.get<Product[]>('data/products.json')),
+        firstValueFrom(this.http.get<Brand[]>('data/brands.json')),
+        firstValueFrom(this.http.get<Group[]>('data/groups.json')),
       ]).then(([products, brands, groups]) => {
         this.productsState.set(products);
         this.brandsState.set(brands);

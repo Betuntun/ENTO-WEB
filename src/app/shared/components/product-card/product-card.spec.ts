@@ -18,9 +18,9 @@ async function createComponent(product: Product) {
   fixture.componentRef.setInput('product', product);
   fixture.detectChanges();
 
-  httpMock.expectOne('/data/products.json').flush([]);
-  httpMock.expectOne('/data/brands.json').flush(BRANDS);
-  httpMock.expectOne('/data/groups.json').flush([]);
+  httpMock.expectOne('data/products.json').flush([]);
+  httpMock.expectOne('data/brands.json').flush(BRANDS);
+  httpMock.expectOne('data/groups.json').flush([]);
   await fixture.whenStable();
   fixture.detectChanges();
 

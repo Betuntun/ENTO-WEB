@@ -1010,19 +1010,19 @@
     "imageUrl": "/images/products/union-multipunto-mpj.png"
   },
   {
-    "id": "weidmann-pendiente-1",
-    "name": "Papel insoldur diamante (pendiente producto real)",
+    "id": "cintas-dielectricas-adhesivas",
+    "name": "Cintas dieléctricas adhesivas",
     "brandId": "weidmann",
     "groupIds": [],
-    "imageUrl": "/images/products/papel-insoldur-diamante.png",
+    "imageUrl": "/images/products/cintas-dielectricas-adhesivas.png",
     "featured": true
   },
   {
-    "id": "abb-pendiente-1",
-    "name": "Boquilla baja tensión 5/8\" 600Amp (pendiente producto real)",
+    "id": "boquilla-baja-tension-1-1200amp",
+    "name": "Boquilla baja tensión 1\" 1200Amp",
     "brandId": "abb",
     "groupIds": [],
-    "imageUrl": "/images/products/boquilla-baja-tension-5-8-600amp.png",
+    "imageUrl": "/images/products/boquilla-baja-tension-1-1200amp.png",
     "featured": true
   }
 ]

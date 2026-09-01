@@ -74,9 +74,9 @@ describe('DataService', () => {
     const httpMock = TestBed.inject(HttpTestingController);
     const service = TestBed.inject(DataService);
 
-    httpMock.expectOne('/data/products.json').flush(PRODUCTS);
-    httpMock.expectOne('/data/brands.json').flush(BRANDS);
-    httpMock.expectOne('/data/groups.json').flush(GROUPS);
+    httpMock.expectOne('data/products.json').flush(PRODUCTS);
+    httpMock.expectOne('data/brands.json').flush(BRANDS);
+    httpMock.expectOne('data/groups.json').flush(GROUPS);
     await service.load();
 
     return service;
@@ -89,9 +89,9 @@ describe('DataService', () => {
     const httpMock = TestBed.inject(HttpTestingController);
     const service = TestBed.inject(DataService);
 
-    httpMock.expectOne('/data/products.json').flush(PRODUCTS);
-    httpMock.expectOne('/data/brands.json').flush(BRANDS);
-    httpMock.expectOne('/data/groups.json').flush(GROUPS);
+    httpMock.expectOne('data/products.json').flush(PRODUCTS);
+    httpMock.expectOne('data/brands.json').flush(BRANDS);
+    httpMock.expectOne('data/groups.json').flush(GROUPS);
     await service.load();
     await service.load();
 

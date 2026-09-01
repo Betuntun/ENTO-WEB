@@ -40,9 +40,9 @@ async function createComponent(queryParams: Record<string, string>) {
   const fixture = TestBed.createComponent(ProductsList);
   fixture.detectChanges();
 
-  httpMock.expectOne('/data/products.json').flush(PRODUCTS);
-  httpMock.expectOne('/data/brands.json').flush(BRANDS);
-  httpMock.expectOne('/data/groups.json').flush(GROUPS);
+  httpMock.expectOne('data/products.json').flush(PRODUCTS);
+  httpMock.expectOne('data/brands.json').flush(BRANDS);
+  httpMock.expectOne('data/groups.json').flush(GROUPS);
   await fixture.whenStable();
   fixture.detectChanges();
 
