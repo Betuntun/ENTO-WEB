@@ -3,7 +3,7 @@
   gap: 2rem;
   max-width: 1240px;
   margin-inline: auto;
-  padding: 2rem 1.5rem;
+  padding: 2rem var(--content-padding-x);
   align-items: flex-start;
 
   @media (max-width: 768px) {

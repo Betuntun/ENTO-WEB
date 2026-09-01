@@ -48,6 +48,17 @@
   // Tipografía
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Manrope', system-ui, -apple-system, sans-serif;
+
+  // Margen lateral único compartido por todas las secciones de nivel superior
+  // (header, hero, grids de producto, marcas destacadas, footer), para que
+  // el contenido quede alineado en las mismas dos líneas verticales.
+  --content-padding-x: 2rem;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --content-padding-x: 1.25rem;
+  }
 }
 
 * {

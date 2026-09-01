@@ -9,13 +9,9 @@ import { Brand } from '../../../core/models';
 export class BrandCarousel {
   readonly brands = input.required<Brand[]>();
 
-  readonly topRow = computed(() => {
-    const half = Math.ceil(this.brands().length / 2);
-    return this.brands().slice(0, half);
-  });
-
-  readonly bottomRow = computed(() => {
-    const half = Math.ceil(this.brands().length / 2);
-    return this.brands().slice(half);
-  });
+  // Ambas filas muestran el set completo de marcas (no una partición entre
+  // ellas) — cada fila anima en su propia dirección, pero todas las marcas
+  // deben verse tanto arriba como abajo.
+  readonly topRow = computed(() => this.brands());
+  readonly bottomRow = computed(() => this.brands());
 }

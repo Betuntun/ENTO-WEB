@@ -14,20 +14,20 @@ function createComponent(brands: Brand[]) {
 }
 
 describe('BrandCarousel', () => {
-  it('splits an even list of brands evenly between the two rows', () => {
+  it('shows the full brand list in both rows, not a partition between them', () => {
     const brands = ['a', 'b', 'c', 'd'].map(makeBrand);
     const component = createComponent(brands);
 
-    expect(component.topRow().map((b) => b.id)).toEqual(['a', 'b']);
-    expect(component.bottomRow().map((b) => b.id)).toEqual(['c', 'd']);
+    expect(component.topRow().map((b) => b.id)).toEqual(['a', 'b', 'c', 'd']);
+    expect(component.bottomRow().map((b) => b.id)).toEqual(['a', 'b', 'c', 'd']);
   });
 
-  it('gives the top row the extra brand when the list has an odd length', () => {
+  it('handles an odd-length list the same way in both rows', () => {
     const brands = ['a', 'b', 'c'].map(makeBrand);
     const component = createComponent(brands);
 
-    expect(component.topRow().map((b) => b.id)).toEqual(['a', 'b']);
-    expect(component.bottomRow().map((b) => b.id)).toEqual(['c']);
+    expect(component.topRow().map((b) => b.id)).toEqual(['a', 'b', 'c']);
+    expect(component.bottomRow().map((b) => b.id)).toEqual(['a', 'b', 'c']);
   });
 
   it('handles an empty brand list without throwing', () => {
@@ -37,10 +37,10 @@ describe('BrandCarousel', () => {
     expect(component.bottomRow()).toEqual([]);
   });
 
-  it('puts every brand in the top row and none in the bottom when there is only one', () => {
+  it('handles a single brand the same way in both rows', () => {
     const component = createComponent([makeBrand('solo')]);
 
     expect(component.topRow().map((b) => b.id)).toEqual(['solo']);
-    expect(component.bottomRow()).toEqual([]);
+    expect(component.bottomRow().map((b) => b.id)).toEqual(['solo']);
   });
 });

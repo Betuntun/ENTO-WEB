@@ -4,15 +4,15 @@
   min-height: 408px;
   display: flex;
   align-items: center;
-  padding: 3.6rem 1.5rem;
-  background: url('/images/hero/hero-fondo-inicio.png') center center / 90% auto no-repeat;
+  padding: 3.6rem var(--content-padding-x);
+  background: url('/images/hero/hero-fondo-inicio.png') center center / cover no-repeat;
   background-color: var(--color-black);
 
   @media (max-width: 640px) {
-    min-height: 440px;
-    padding: 1.5rem 1.25rem 2rem;
+    min-height: 480px;
+    padding: 1.5rem var(--content-padding-x) 2rem;
     align-items: flex-start;
-    background: url('/images/hero/hero-mobile.png') center bottom / cover no-repeat;
+    background: url('/images/hero/hero-mobile.png') center top / cover no-repeat;
     background-color: var(--color-black);
   }
 }
@@ -87,12 +87,12 @@
 }
 
 .brand-section {
-  padding: 3rem 2rem;
+  padding: 3rem var(--content-padding-x);
   max-width: 1240px;
   margin-inline: auto;
 
   @media (max-width: 640px) {
-    padding: 2.25rem 1.25rem;
+    padding: 2.25rem var(--content-padding-x);
   }
 }
 
@@ -194,7 +194,7 @@
 }
 
 .brands-highlight {
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem var(--content-padding-x);
   background: var(--color-gray-light);
 
   h2 {
