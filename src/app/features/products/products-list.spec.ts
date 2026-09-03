@@ -7,7 +7,7 @@ import { ProductsList } from './products-list';
 import { Brand, Group, Product } from '../../core/models';
 
 const BRANDS: Brand[] = [
-  { id: 'chardon', name: 'Chardón', logoUrl: '', hasGroups: true, hasProducts: true },
+  { id: 'chardon', name: 'Chardon', logoUrl: '', hasGroups: true, hasProducts: true },
   { id: 'abb', name: 'ABB', logoUrl: '', hasGroups: false, hasProducts: true },
 ];
 
@@ -15,8 +15,8 @@ const GROUPS: Group[] = [{ id: 'g1', brandId: 'chardon', name: 'Conectores' }];
 
 const PRODUCTS: Product[] = [
   { id: 'p1', name: 'Boquilla ABB', brandId: 'abb', groupIds: [], imageUrl: '' },
-  { id: 'p2', name: 'Conector Chardón', brandId: 'chardon', groupIds: ['g1'], imageUrl: '' },
-  { id: 'p3', name: 'Interruptor Chardón', brandId: 'chardon', groupIds: [], imageUrl: '' },
+  { id: 'p2', name: 'Conector Chardon', brandId: 'chardon', groupIds: ['g1'], imageUrl: '' },
+  { id: 'p3', name: 'Interruptor Chardon', brandId: 'chardon', groupIds: [], imageUrl: '' },
 ];
 
 async function createComponent(queryParams: Record<string, string>) {
@@ -50,7 +50,7 @@ async function createComponent(queryParams: Record<string, string>) {
 }
 
 describe('ProductsList filtering', () => {
-  it('shows all products with Chardón first when no filters are active', async () => {
+  it('shows all products with Chardon first when no filters are active', async () => {
     const component = await createComponent({});
     expect(component['filteredProducts']().map((p) => p.id)).toEqual(['p2', 'p3', 'p1']);
   });

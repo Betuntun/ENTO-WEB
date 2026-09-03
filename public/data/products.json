@@ -67,6 +67,22 @@
     "imageUrl": "/images/products/seccionador-trifasico-2-posiciones-34-5kv-300a.png"
   },
   {
+    "id": "carton-form-vall",
+    "name": "Cartón form vall",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/carton-form-vall.png",
+    "featured": true
+  },
+  {
+    "id": "papel-crepe",
+    "name": "Papel crepé",
+    "brandId": "weidmann",
+    "groupIds": [],
+    "imageUrl": "/images/products/papel-crepe.png",
+    "featured": true
+  },
+  {
     "id": "papel-insoldur-diamante",
     "name": "Papel insoldur diamante",
     "brandId": "weidmann",
@@ -83,30 +99,13 @@
     "featured": true
   },
   {
-    "id": "papel-crepe",
-    "name": "Papel crepé",
-    "brandId": "weidmann",
-    "groupIds": [],
-    "imageUrl": "/images/products/papel-crepe.png",
-    "featured": true
-  },
-  {
-    "id": "carton-form-vall",
-    "name": "Cartón form vall",
-    "brandId": "weidmann",
-    "groupIds": [],
-    "imageUrl": "/images/products/carton-form-vall.png",
-    "featured": true
-  },
-  {
     "id": "15-kv-200a-loadbreak-alimentacion-portatil-a-traves-de-15-lpft200",
     "name": "15 kV, 200A Loadbreak Alimentación portátil a través de (15-LPFT200)",
     "brandId": "chardon",
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
     ],
-    "imageUrl": "/images/products/15-kv-200a-loadbreak-alimentacion-portatil-a-traves-de-15-lpft200.png",
-    "featured": true
+    "imageUrl": "/images/products/15-kv-200a-loadbreak-alimentacion-portatil-a-traves-de-15-lpft200.png"
   },
   {
     "id": "15-kv-200a-union-de-rotura-de-carga-15-lj200",
@@ -115,18 +114,7 @@
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
     ],
-    "imageUrl": "/images/products/15-kv-200a-union-de-rotura-de-carga-15-lj200.png",
-    "featured": true
-  },
-  {
-    "id": "15-kv-codo-de-ruptura-de-carga-de-200-a-15-le200",
-    "name": "15 kV, Codo de ruptura de carga de 200 A (15-LE200)",
-    "brandId": "chardon",
-    "groupIds": [
-      "accesorios-para-cables-ieee-ansi"
-    ],
-    "imageUrl": "/images/products/15-kv-codo-de-ruptura-de-carga-de-200-a-15-le200.png",
-    "featured": true
+    "imageUrl": "/images/products/15-kv-200a-union-de-rotura-de-carga-15-lj200.png"
   },
   {
     "id": "15-25-kv-600-a-900-a-cuerpo-en-t-15-25-tb600",
@@ -135,8 +123,7 @@
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
     ],
-    "imageUrl": "/images/products/15-25-kv-600-a-900-a-cuerpo-en-t-15-25-tb600.png",
-    "featured": true
+    "imageUrl": "/images/products/15-25-kv-600-a-900-a-cuerpo-en-t-15-25-tb600.png"
   },
   {
     "id": "15-25-kv-600a-buje-de-aparato-15-25-ab600",
@@ -271,7 +258,18 @@
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
     ],
-    "imageUrl": "/images/products/25-kv-inserto-de-alimentacion-de-rotura-de-carga-25-lfti.png"
+    "imageUrl": "/images/products/25-kv-inserto-de-alimentacion-de-rotura-de-carga-25-lfti.png",
+    "featured": true
+  },
+  {
+    "id": "15-kv-codo-de-ruptura-de-carga-de-200-a-15-le200",
+    "name": "15 kV, Codo de ruptura de carga de 200 A (15-LE200)",
+    "brandId": "chardon",
+    "groupIds": [
+      "accesorios-para-cables-ieee-ansi"
+    ],
+    "imageUrl": "/images/products/15-kv-codo-de-ruptura-de-carga-de-200-a-15-le200.png",
+    "featured": true
   },
   {
     "id": "35-kv-200a-loadbreak-codo-gran-interfaz-35l-le200",
@@ -289,7 +287,8 @@
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
     ],
-    "imageUrl": "/images/products/35-kv-200a-loadbreak-fuse-codo-35-lfe200.png"
+    "imageUrl": "/images/products/35-kv-200a-loadbreak-fuse-codo-35-lfe200.png",
+    "featured": true
   },
   {
     "id": "35-kv-200a-loadbreak-inserto-a-traves-de-alimentacion-35-lfti",
@@ -316,7 +315,8 @@
     "groupIds": [
       "accesorios-para-cables-ieee-ansi"
     ],
-    "imageUrl": "/images/products/35-kv-200a-union-de-rotura-de-carga-35-lj200.png"
+    "imageUrl": "/images/products/35-kv-200a-union-de-rotura-de-carga-35-lj200.png",
+    "featured": true
   },
   {
     "id": "35-kv-600a-900a-buje-de-aparato-35-ab600-35-ab900",
@@ -386,7 +386,7 @@
     "name": "36 kV, 630A Interfaz C Buje Del Equipo (36-DIB630)",
     "brandId": "chardon",
     "groupIds": [
-      "accesorios-para-cables-ieee-ansi"
+      "accesorios-para-cables-iec"
     ],
     "imageUrl": "/images/products/36-kv-630a-interfaz-c-buje-del-equipo-36-dib630.png"
   },
@@ -558,7 +558,7 @@
     "name": "Alimentación portátil de 35 kV, 200A Loadbreak (35-LPFT200)",
     "brandId": "chardon",
     "groupIds": [
-      "accesorios-para-cables-ieee-ansi"
+      "accesorios-para-cables-iec"
     ],
     "imageUrl": "/images/products/alimentacion-portatil-de-35-kv-200a-loadbreak-35-lpft200.png"
   },
@@ -747,7 +747,7 @@
     "name": "Enlace de aislamiento (CHIL)",
     "brandId": "chardon",
     "groupIds": [
-      "componentes-para-transformadores"
+      "accesorios-para-cables-ieee-ansi"
     ],
     "imageUrl": "/images/products/enlace-de-aislamiento-chil.png"
   },
@@ -849,7 +849,8 @@
     "groupIds": [
       "componentes-para-transformadores"
     ],
-    "imageUrl": "/images/products/portafusibles-montado-en-la-pared-lateral-y-cubierta-chbon.png"
+    "imageUrl": "/images/products/portafusibles-montado-en-la-pared-lateral-y-cubierta-chbon.png",
+    "featured": true
   },
   {
     "id": "pozo-de-buje-200a-hasta-35-kv-ch200bw",
@@ -865,7 +866,7 @@
     "name": "Pozo de buje integral 200A, hasta 35 kV (CH200BWC)",
     "brandId": "chardon",
     "groupIds": [
-      "accesorios-para-cables-ieee-ansi"
+      "componentes-para-transformadores"
     ],
     "imageUrl": "/images/products/pozo-de-buje-integral-200a-hasta-35-kv-ch200bwc.png"
   },

@@ -1,0 +1,13 @@
+services:
+  web:
+    image: node:24-alpine
+    container_name: ento-web-dev
+    working_dir: /workspace
+    command: sh -c "npm ci && npx ng serve --host 0.0.0.0 --port 4200 --allowed-hosts --poll 1000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - CHOKIDAR_INTERVAL=1000
+    volumes:
+      - .:/workspace
+    ports:
+      - '4200:4200'

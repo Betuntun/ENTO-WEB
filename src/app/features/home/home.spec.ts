@@ -7,14 +7,14 @@ import { Home } from './home';
 import { Brand, Product } from '../../core/models';
 
 const BRANDS: Brand[] = [
-  { id: 'chardon', name: 'Chardón', logoUrl: '', hasGroups: true, hasProducts: true },
+  { id: 'chardon', name: 'Chardon', logoUrl: '', hasGroups: true, hasProducts: true },
   { id: 'weidmann', name: 'Weidmann', logoUrl: '', hasGroups: false, hasProducts: true },
   { id: 'abb', name: 'ABB', logoUrl: '', hasGroups: false, hasProducts: true },
 ];
 
 const PRODUCTS: Product[] = [
-  { id: 'p1', name: 'Chardón 1', brandId: 'chardon', groupIds: [], imageUrl: '', featured: true },
-  { id: 'p2', name: 'Chardón 2', brandId: 'chardon', groupIds: [], imageUrl: '' },
+  { id: 'p1', name: 'Chardon 1', brandId: 'chardon', groupIds: [], imageUrl: '', featured: true },
+  { id: 'p2', name: 'Chardon 2', brandId: 'chardon', groupIds: [], imageUrl: '' },
   { id: 'p3', name: 'Weidmann 1', brandId: 'weidmann', groupIds: [], imageUrl: '', featured: true },
 ];
 
@@ -43,7 +43,7 @@ describe('Home featuredBrands', () => {
     const sections = fixture.componentInstance['featuredBrands']();
 
     expect(sections.map((s) => s.brandId)).toEqual(['chardon', 'weidmann', 'abb']);
-    expect(sections[0].brand?.name).toBe('Chardón');
+    expect(sections[0].brand?.name).toBe('Chardon');
   });
 
   it('only includes featured products for each brand, up to the given limit', async () => {

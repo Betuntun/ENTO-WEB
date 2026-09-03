@@ -29,7 +29,7 @@ export class Home {
     FEATURED_BRAND_IDS.map((brandId) => ({
       brandId,
       brand: this.data.brands().find((b) => b.id === brandId),
-      products: this.data.featuredByBrand(brandId, 4)(),
+      products: this.data.featuredByBrand(brandId, 5)(),
     })),
   );
 

@@ -32,7 +32,7 @@ describe('sortChardonMultiGroupFirst', () => {
 });
 
 describe('sortChardonFirst', () => {
-  it('places all Chardón products before other brands', () => {
+  it('places all Chardon products before other brands', () => {
     const abb = makeProduct('abb1', [], 'abb');
     const chardonA = makeProduct('chardonA', [], 'chardon');
     const weidmann = makeProduct('weidmann1', [], 'weidmann');
@@ -46,7 +46,7 @@ describe('sortChardonFirst', () => {
 
 describe('DataService', () => {
   const BRANDS: Brand[] = [
-    { id: 'chardon', name: 'Chardón', logoUrl: '', hasGroups: true, hasProducts: true },
+    { id: 'chardon', name: 'Chardon', logoUrl: '', hasGroups: true, hasProducts: true },
     { id: 'abb', name: 'ABB', logoUrl: '', hasGroups: false, hasProducts: true },
   ];
   const GROUPS: Group[] = [
@@ -55,16 +55,16 @@ describe('DataService', () => {
   ];
   const PRODUCTS: Product[] = [
     { id: 'p1', name: 'Boquilla ABB', brandId: 'abb', groupIds: [], imageUrl: '', featured: true },
-    { id: 'p2', name: 'Conector Chardón', brandId: 'chardon', groupIds: ['g1'], imageUrl: '' },
+    { id: 'p2', name: 'Conector Chardon', brandId: 'chardon', groupIds: ['g1'], imageUrl: '' },
     {
       id: 'p3',
-      name: 'Interruptor Chardón',
+      name: 'Interruptor Chardon',
       brandId: 'chardon',
       groupIds: ['g1', 'g2'],
       imageUrl: '',
       featured: true,
     },
-    { id: 'p4', name: 'Terminal Chardón', brandId: 'chardon', groupIds: ['g2'], imageUrl: '', featured: true },
+    { id: 'p4', name: 'Terminal Chardon', brandId: 'chardon', groupIds: ['g2'], imageUrl: '', featured: true },
   ];
 
   async function createService() {
@@ -99,7 +99,7 @@ describe('DataService', () => {
     expect(service.products().length).toBe(4);
   });
 
-  it('productsByBrand applies the Chardón multi-group-first order only for brands with hasGroups', async () => {
+  it('productsByBrand applies the Chardon multi-group-first order only for brands with hasGroups', async () => {
     const service = await createService();
 
     expect(service.productsByBrand('chardon')().map((p) => p.id)).toEqual(['p3', 'p2', 'p4']);

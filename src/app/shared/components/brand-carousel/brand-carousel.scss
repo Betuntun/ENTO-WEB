@@ -13,12 +13,14 @@
   width: max-content;
 }
 
+// El track "left" es la fila de arriba y corre hacia la derecha; el "right"
+// es la fila de abajo y corre hacia la izquierda (sentidos opuestos entre sí).
 .brand-carousel__track--left {
-  animation: brand-carousel-scroll-left 30s linear infinite;
+  animation: brand-carousel-scroll-right 30s linear infinite;
 }
 
 .brand-carousel__track--right {
-  animation: brand-carousel-scroll-right 26s linear infinite;
+  animation: brand-carousel-scroll-left 26s linear infinite;
 }
 
 .brand-carousel__card {
@@ -57,6 +59,8 @@
 
 @keyframes brand-carousel-scroll-right {
   from {
+    // Arranca desplazada una copia completa hacia la izquierda para que,
+    // al animar hacia 0, el contenido entre desde la derecha.
     transform: translateX(-50%);
   }
   to {

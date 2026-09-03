@@ -19,15 +19,25 @@ describe('BrandCarousel', () => {
     const component = createComponent(brands);
 
     expect(component.topRow().map((b) => b.id)).toEqual(['a', 'b', 'c', 'd']);
-    expect(component.bottomRow().map((b) => b.id)).toEqual(['a', 'b', 'c', 'd']);
+    expect(component.bottomRow().map((b) => b.id).sort()).toEqual(['a', 'b', 'c', 'd']);
   });
 
-  it('handles an odd-length list the same way in both rows', () => {
+  it('offsets the bottom row by half the list so columns never align on the same brand', () => {
+    const brands = ['a', 'b', 'c', 'd'].map(makeBrand);
+    const component = createComponent(brands);
+
+    expect(component.bottomRow().map((b) => b.id)).toEqual(['c', 'd', 'a', 'b']);
+    component.topRow().forEach((brand, i) => {
+      expect(component.bottomRow()[i].id).not.toBe(brand.id);
+    });
+  });
+
+  it('handles an odd-length list with a floor offset', () => {
     const brands = ['a', 'b', 'c'].map(makeBrand);
     const component = createComponent(brands);
 
     expect(component.topRow().map((b) => b.id)).toEqual(['a', 'b', 'c']);
-    expect(component.bottomRow().map((b) => b.id)).toEqual(['a', 'b', 'c']);
+    expect(component.bottomRow().map((b) => b.id)).toEqual(['b', 'c', 'a']);
   });
 
   it('handles an empty brand list without throwing', () => {

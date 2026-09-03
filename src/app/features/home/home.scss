@@ -1,19 +1,45 @@
 .hero {
   position: relative;
   color: var(--color-white);
-  min-height: 408px;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   padding: 3.6rem var(--content-padding-x);
   background: url('/images/hero/hero-fondo-inicio.png') center center / cover no-repeat;
   background-color: var(--color-black);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.35) 45%, rgba(0, 0, 0, 0.1) 75%);
+    pointer-events: none;
+  }
 
   @media (max-width: 640px) {
-    min-height: 480px;
-    padding: 1.5rem var(--content-padding-x) 2rem;
+    min-height: calc(100vh - var(--mobile-header-height));
+    min-height: calc(100dvh - var(--mobile-header-height));
+    padding: 2rem var(--content-padding-x) 3rem;
     align-items: flex-start;
     background: url('/images/hero/hero-mobile.png') center top / cover no-repeat;
     background-color: var(--color-black);
+
+    &::before {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.45) 35%, rgba(0, 0, 0, 0.15) 60%);
+    }
+  }
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+
+  @media (max-width: 640px) {
+    padding-top: 2rem;
   }
 }
 
@@ -35,7 +61,6 @@
 
   @media (max-width: 640px) {
     margin-left: 0;
-    margin-top: 2.5rem;
 
     h1 {
       font-size: 1.6rem;
@@ -125,11 +150,14 @@
 
 .brand-section__grid {
   display: grid;
-  // 5 columnas elásticas (1fr): el grid siempre ocupa el 100% del ancho de
-  // .brand-section, igual que el header — así el margen derecho coincide
-  // exacto sin importar si hay 4 o 5 productos + botón "Ver más".
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.25rem;
+  // Siempre 6 columnas (5 productos + botón "Ver más", como Chardon), sin
+  // importar cuántos productos tenga cada marca: así el ancho de columna es
+  // idéntico en todas las secciones. Si una marca tiene menos productos, las
+  // columnas sobrantes quedan vacías a la derecha en vez de estirar las
+  // tarjetas para llenar el espacio.
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 1.25rem;
+  column-gap: 1.75rem;
 
   @media (max-width: 640px) {
     display: flex;
@@ -160,6 +188,7 @@
   width: 96px;
   height: 96px;
   flex-shrink: 0;
+  justify-self: center;
   align-self: center;
   border: none;
   border-radius: 50%;
@@ -200,10 +229,13 @@
   padding: 2.5rem var(--content-padding-x);
   background: var(--color-gray-light);
 
-  h2 {
-    margin: 0 0 1.5rem;
+  &__inner {
     max-width: 1240px;
     margin-inline: auto;
+  }
+
+  h2 {
+    margin: 0 0 1.5rem;
     font-family: var(--font-display);
     text-transform: uppercase;
   }

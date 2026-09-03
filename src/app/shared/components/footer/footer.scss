@@ -1,9 +1,16 @@
+:host {
+  display: block;
+  background: var(--color-black);
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   padding: 3rem var(--content-padding-x);
-  background: var(--color-black);
+  max-width: 1240px;
+  margin-inline: auto;
+  box-sizing: border-box;
   color: var(--color-white);
 
   @media (max-width: 640px) {

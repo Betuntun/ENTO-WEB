@@ -40,7 +40,7 @@ export class ProductsList {
   });
 
   protected readonly selectedBrand = computed(() => this.queryParams().get('brand'));
-  // El filtro de grupo solo tiene efecto cuando la marca activa es Chardón (única con grupos).
+  // El filtro de grupo solo tiene efecto cuando la marca activa es Chardon (única con grupos).
   // Así, una URL con ?group=x sin ?brand=chardon (ej. compartida a mano) no deja un filtro
   // "fantasma" activo que no se refleje en el sidebar.
   protected readonly selectedGroup = computed(() =>

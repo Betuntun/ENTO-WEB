@@ -58,6 +58,8 @@
 @media (max-width: 640px) {
   :root {
     --content-padding-x: 1.25rem;
+    // Alto real del header apilado en columna (logo + buscador + nav) en este breakpoint.
+    --mobile-header-height: 152px;
   }
 }
 

@@ -2,7 +2,7 @@
 
 ## 1. Resumen del proyecto
 
-Sitio web de catálogo de productos para ENTO (Aislantes e Ingeniería) — accesorios y aislantes para equipos de media y baja tensión. Sitio **sin backend**, con productos organizados por **marca** y, en el caso de Chardón, también por **grupo**.
+Sitio web de catálogo de productos para ENTO (Aislantes e Ingeniería) — accesorios y aislantes para equipos de media y baja tensión. Sitio **sin backend**, con productos organizados por **marca** y, en el caso de Chardon, también por **grupo**.
 
 - **Arquitectura:** Angular
 - **Presupuesto:** $5,000 MXN (anticipo de $2,500 MXN)
@@ -23,12 +23,12 @@ Brand {
   id: string
   name: string
   logoUrl: string
-  hasGroups: boolean       // true solo para Chardón
+  hasGroups: boolean       // true solo para Chardon
 }
 
 Group {
   id: string
-  brandId: string          // solo existen grupos para Chardón
+  brandId: string          // solo existen grupos para Chardon
   name: string
 }
 
@@ -43,8 +43,8 @@ Product {
 ```
 
 **Reglas de negocio:**
-- Un producto de Chardón puede pertenecer a **varios grupos a la vez** (`groupIds.length > 1`).
-- En el listado de Chardón, **cuando no hay filtro de grupo activo**, los productos que pertenecen a múltiples grupos se muestran primero; el resto conserva el orden original.
+- Un producto de Chardon puede pertenecer a **varios grupos a la vez** (`groupIds.length > 1`).
+- En el listado de Chardon, **cuando no hay filtro de grupo activo**, los productos que pertenecen a múltiples grupos se muestran primero; el resto conserva el orden original.
 
 ## 4. Páginas y componentes
 
@@ -58,7 +58,7 @@ Product {
 ### Listado de productos
 - Sidebar de filtros:
   - Filtro por **marca** (single-select).
-  - Filtro por **grupo**, visible únicamente cuando la marca seleccionada es Chardón.
+  - Filtro por **grupo**, visible únicamente cuando la marca seleccionada es Chardon.
 - Grid de resultados.
 - **Scroll infinito** (ver sección 6) en lugar de paginador numerado, como primera prueba.
 
@@ -74,9 +74,9 @@ Product {
 ## 5. Lógica de filtrado
 
 - Filtro por marca: siempre visible.
-- Filtro por grupo: solo aparece si la marca activa es Chardón (única marca con grupos).
+- Filtro por grupo: solo aparece si la marca activa es Chardon (única marca con grupos).
 - Búsqueda por texto combinable con los filtros de marca/grupo.
-- Orden especial en Chardón sin filtro de grupo: productos multi-grupo primero (ver sección 3).
+- Orden especial en Chardon sin filtro de grupo: productos multi-grupo primero (ver sección 3).
 
 ## 6. Scroll infinito (prueba inicial, reemplazo del paginador)
 
@@ -121,7 +121,7 @@ Distribuido sobre las 4 semanas acordadas (semana 4 reservada para pruebas/ajust
 - Definir los `interfaces`/`types` de `Brand`, `Group`, `Product` (sección 3).
 - Crear `products.json`, `brands.json`, `groups.json` en `src/assets/data/` con datos de ejemplo tomados de las capturas (mientras llegan las imágenes/datos reales del Drive).
 - Crear `DataService` (o `ProductService`/`BrandService`) con métodos para cargar y consultar productos, marcas y grupos vía `HttpClient`.
-- Implementar la regla de orden de Chardón (productos multi-grupo primero sin filtro activo).
+- Implementar la regla de orden de Chardon (productos multi-grupo primero sin filtro activo).
 
 ### Fase 2 — Home (días 4-7)
 - Header: logo, buscador (con lógica de filtrado dinámico), navegación.
@@ -132,7 +132,7 @@ Distribuido sobre las 4 semanas acordadas (semana 4 reservada para pruebas/ajust
 - Botón de WhatsApp flotante fijo, visible en toda la navegación.
 
 ### Fase 3 — Listado de productos y filtros (días 8-12)
-- Página de listado con sidebar de filtros: marca (single-select) y grupo (condicional a Chardón).
+- Página de listado con sidebar de filtros: marca (single-select) y grupo (condicional a Chardon).
 - Grid de resultados reactivo a los filtros y a la búsqueda por texto.
 - Scroll infinito por lotes sobre el listado filtrado (sección 6), con `IntersectionObserver`.
 - Sincronización de filtros con query params (para que "VER MÁS" y el buscador del home naveguen con el filtro ya aplicado).
@@ -163,7 +163,7 @@ Distribuido sobre las 4 semanas acordadas (semana 4 reservada para pruebas/ajust
 - [ ] Archivo fuente de la tipografía Manrope.
 - [ ] Nombres exactos de las fuentes/secciones donde aplica cada tipografía.
 - [ ] URL corregida de ubicación (Google Maps).
-- [ ] Confirmar si el filtro de grupo de Chardón es single-select o multi-select.
+- [ ] Confirmar si el filtro de grupo de Chardon es single-select o multi-select.
 ## git
 https://github.com/Betuntun/ENTO-WEB.git
 ## nota técnica no prevista en el plan: para probar en runtime tuve que resolver que el dev server de Angular 22 (Vite) rechaza por defecto el header Host: localhost con 400 — se resuelve con --allowed-hosts en ng serve o configurando allowedHosts en angular.json. No lo agregué a angular.json porque es solo para desarrollo local; si quieres que lo dejemos configurado de forma permanente para evitar este paso manual cada vez, dilo y lo agrego.
