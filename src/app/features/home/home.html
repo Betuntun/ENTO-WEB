@@ -1,4 +1,8 @@
-<section class="hero">
+<section
+  class="hero"
+  [style.--hero-desktop-image]="'url(' + heroDesktopUrl + ')'"
+  [style.--hero-mobile-image]="'url(' + heroMobileUrl + ')'"
+>
   <div class="hero__inner">
   <div class="hero__content">
     <h1>

@@ -25,6 +25,12 @@ export class Home {
 
   protected readonly selectedProduct = signal<Product | null>(null);
 
+  // Rutas relativas (sin "/" inicial) para que el navegador las resuelva
+  // contra el <base href> vigente en vez de la raíz del dominio; necesario
+  // porque el sitio se publica bajo /ENTO-WEB/ en GitHub Pages.
+  protected readonly heroDesktopUrl = 'images/hero/hero-fondo-inicio.webp';
+  protected readonly heroMobileUrl = 'images/hero/hero-mobile.webp';
+
   protected readonly featuredBrands = computed(() =>
     FEATURED_BRAND_IDS.map((brandId) => ({
       brandId,

@@ -9,5 +9,29 @@ services:
       - CHOKIDAR_INTERVAL=1000
     volumes:
       - .:/workspace
+      # node_modules en volumen nombrado, no en el bind mount: evita corromper
+      # la instalación por I/O lenta/cruzada Windows<->Linux y por choques con
+      # "npm ci" de otros servicios (p. ej. "build") corriendo a la vez.
+      - web_node_modules:/workspace/node_modules
     ports:
       - '4200:4200'
+
+  # Build de producción con el mismo base-href que usa CI para GitHub Pages.
+  # El --base-href vive aquí, no en la línea de comandos, para evitar que
+  # Git Bash/MSYS en Windows reescriba "/ENTO-WEB/" como una ruta de archivo.
+  # node_modules va en su propio volumen (no el bind mount ni el de "web")
+  # para que este servicio pueda correr en paralelo sin pisar al de "web".
+  # Uso: docker compose run --rm build
+  build:
+    image: node:24-alpine
+    working_dir: /workspace
+    command: sh -c "npm ci && npx ng build --base-href /ENTO-WEB/"
+    volumes:
+      - .:/workspace
+      - build_node_modules:/workspace/node_modules
+    profiles:
+      - build
+
+volumes:
+  web_node_modules:
+  build_node_modules:
