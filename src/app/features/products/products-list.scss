@@ -53,8 +53,16 @@
 
 .results__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 1120px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 
   @media (max-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
