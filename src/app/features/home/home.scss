@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   padding: 3.6rem var(--content-padding-x);
-  background: url('/images/hero/hero-fondo-inicio.png') center center / cover no-repeat;
+  background: url('/images/hero/hero-fondo-inicio.webp') center center / cover no-repeat;
   background-color: var(--color-black);
   overflow: hidden;
 
@@ -22,7 +22,7 @@
     min-height: calc(100dvh - var(--mobile-header-height));
     padding: 2rem var(--content-padding-x) 3rem;
     align-items: flex-start;
-    background: url('/images/hero/hero-mobile.png') center top / cover no-repeat;
+    background: url('/images/hero/hero-mobile.webp') center top / cover no-repeat;
     background-color: var(--color-black);
 
     &::before {
