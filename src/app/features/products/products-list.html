@@ -4,13 +4,12 @@
 
     <label class="sidebar__field">
       Marca
-      <select
-        [value]="selectedBrand() ?? ''"
-        (change)="selectBrand($any($event.target).value || null)"
-      >
-        <option value="">Todas</option>
+      <select (change)="selectBrand($any($event.target).value || null)">
+        <option value="" [selected]="!selectedBrand()">Todas</option>
         @for (brand of filterableBrands(); track brand.id) {
-          <option [value]="brand.id">{{ brand.name }}</option>
+          <option [value]="brand.id" [selected]="brand.id === selectedBrand()">
+            {{ brand.name }}
+          </option>
         }
       </select>
     </label>
@@ -18,13 +17,12 @@
     @if (selectedBrand() === 'chardon') {
       <label class="sidebar__field">
         Grupo
-        <select
-          [value]="selectedGroup() ?? ''"
-          (change)="selectGroup($any($event.target).value || null)"
-        >
-          <option value="">Todos</option>
+        <select (change)="selectGroup($any($event.target).value || null)">
+          <option value="" [selected]="!selectedGroup()">Todos</option>
           @for (group of groupOptions(); track group.id) {
-            <option [value]="group.id">{{ group.name }}</option>
+            <option [value]="group.id" [selected]="group.id === selectedGroup()">
+              {{ group.name }}
+            </option>
           }
         </select>
       </label>

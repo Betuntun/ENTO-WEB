@@ -16,7 +16,7 @@ const GROUPS: Group[] = [{ id: 'g1', brandId: 'chardon', name: 'Conectores' }];
 const PRODUCTS: Product[] = [
   { id: 'p1', name: 'Boquilla ABB', brandId: 'abb', groupIds: [], imageUrl: '' },
   { id: 'p2', name: 'Conector Chardon', brandId: 'chardon', groupIds: ['g1'], imageUrl: '' },
-  { id: 'p3', name: 'Interruptor Chardon', brandId: 'chardon', groupIds: [], imageUrl: '' },
+  { id: 'p3', name: 'Terminación retráctil Chardon', brandId: 'chardon', groupIds: [], imageUrl: '' },
 ];
 
 async function createComponent(queryParams: Record<string, string>) {
@@ -68,5 +68,20 @@ describe('ProductsList filtering', () => {
   it('filters by search text', async () => {
     const component = await createComponent({ q: 'boquilla' });
     expect(component['filteredProducts']().map((p) => p.id)).toEqual(['p1']);
+  });
+
+  it('filters by search text without typing the accent', async () => {
+    const component = await createComponent({ q: 'retractil' });
+    expect(component['filteredProducts']().map((p) => p.id)).toEqual(['p3']);
+  });
+
+  it('filters by search text typing the accent', async () => {
+    const component = await createComponent({ q: 'retráctil' });
+    expect(component['filteredProducts']().map((p) => p.id)).toEqual(['p3']);
+  });
+
+  it('filters by brand name typed in the search box', async () => {
+    const component = await createComponent({ q: 'chardon' });
+    expect(component['filteredProducts']().map((p) => p.id).sort()).toEqual(['p2', 'p3']);
   });
 });

@@ -15,6 +15,15 @@ export function sortChardonFirst(products: Product[]): Product[] {
   return [...chardon, ...rest];
 }
 
+// Quita diacríticos y normaliza mayúsculas para que las búsquedas funcionen
+// con y sin tilde (p. ej. "retráctil" y "retractil" deben coincidir).
+export function normalizeSearchText(value: string): string {
+  return value
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase();
+}
+
 // Las URLs en los JSON de datos empiezan con "/" (raíz del dominio), lo cual
 // ignora el <base href> cuando el sitio se publica bajo una subruta (p. ej.
 // GitHub Pages en /ENTO-WEB/). Se vuelven relativas para que el navegador las

@@ -16,11 +16,11 @@
 // El track "left" es la fila de arriba y corre hacia la derecha; el "right"
 // es la fila de abajo y corre hacia la izquierda (sentidos opuestos entre sí).
 .brand-carousel__track--left {
-  animation: brand-carousel-scroll-right 30s linear infinite;
+  animation: brand-carousel-scroll-right 48s linear infinite;
 }
 
 .brand-carousel__track--right {
-  animation: brand-carousel-scroll-left 26s linear infinite;
+  animation: brand-carousel-scroll-left 42s linear infinite;
 }
 
 .brand-carousel__card {

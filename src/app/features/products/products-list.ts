@@ -12,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
-import { DataService, sortChardonFirst } from '../../core/services/data.service';
+import { DataService, normalizeSearchText, sortChardonFirst } from '../../core/services/data.service';
 import { SeoService } from '../../core/services/seo.service';
 import { Product } from '../../core/models';
 import { ProductCard } from '../../shared/components/product-card/product-card';
@@ -56,10 +56,20 @@ export class ProductsList {
     this.selectedBrand() === 'chardon' ? this.data.groupsForBrand('chardon')() : [],
   );
 
+  // Mapa brandId -> nombre normalizado, para poder buscar también por marca
+  // (p. ej. "chardon") sin depender de que el producto repita el nombre.
+  private readonly brandNamesById = computed(() => {
+    const map = new Map<string, string>();
+    for (const brand of this.data.brands()) {
+      map.set(brand.id, normalizeSearchText(brand.name));
+    }
+    return map;
+  });
+
   protected readonly filteredProducts = computed(() => {
     const brandId = this.selectedBrand();
     const groupId = this.selectedGroup();
-    const term = this.searchTerm().trim().toLowerCase();
+    const term = normalizeSearchText(this.searchTerm().trim());
 
     let list = brandId ? this.data.productsByBrand(brandId)() : sortChardonFirst(this.data.products());
 
@@ -67,7 +77,12 @@ export class ProductsList {
       list = list.filter((p) => p.groupIds.includes(groupId));
     }
     if (term) {
-      list = list.filter((p) => p.name.toLowerCase().includes(term));
+      const brandNames = this.brandNamesById();
+      list = list.filter(
+        (p) =>
+          normalizeSearchText(p.name).includes(term) ||
+          (brandNames.get(p.brandId) ?? '').includes(term),
+      );
     }
     return list;
   });

@@ -2,7 +2,12 @@ import { TestBed } from '@angular/core/testing';
 import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { provideHttpClient } from '@angular/common/http';
 import { Brand, Group, Product } from '../models';
-import { DataService, sortChardonFirst, sortChardonMultiGroupFirst } from './data.service';
+import {
+  DataService,
+  normalizeSearchText,
+  sortChardonFirst,
+  sortChardonMultiGroupFirst,
+} from './data.service';
 
 function makeProduct(id: string, groupIds: string[], brandId = 'chardon'): Product {
   return { id, name: id, brandId, groupIds, imageUrl: '' };
@@ -41,6 +46,16 @@ describe('sortChardonFirst', () => {
     const result = sortChardonFirst([abb, chardonA, weidmann, chardonB]);
 
     expect(result.map((p) => p.id)).toEqual(['chardonA', 'chardonB', 'abb1', 'weidmann1']);
+  });
+});
+
+describe('normalizeSearchText', () => {
+  it('strips accents and lowercases so accented and plain text match', () => {
+    expect(normalizeSearchText('Retráctil')).toBe(normalizeSearchText('retractil'));
+  });
+
+  it('is a no-op for already-plain lowercase text', () => {
+    expect(normalizeSearchText('chardon')).toBe('chardon');
   });
 });
 

@@ -1,5 +1,12 @@
 [
   {
+    "id": "chardon",
+    "name": "Chardon",
+    "logoUrl": "/images/brands/chardon.webp",
+    "hasGroups": true,
+    "hasProducts": true
+  },
+  {
     "id": "abb",
     "name": "ABB",
     "logoUrl": "/images/brands/abb.webp",
@@ -32,13 +39,6 @@
     "name": "Weidmann",
     "logoUrl": "/images/brands/weidmann.webp",
     "hasGroups": false,
-    "hasProducts": true
-  },
-  {
-    "id": "chardon",
-    "name": "Chardon",
-    "logoUrl": "/images/brands/chardon.webp",
-    "hasGroups": true,
     "hasProducts": true
   },
   {
