@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-ENTO Web — static product catalog site for ENTO (Aislantes e Ingeniería), a distributor of accessories/insulators for medium and low voltage equipment. Angular 22 standalone app with SSR/prerender, **no backend**: all content is served as static JSON and rendered at build time. Full spec (in Spanish) is in [ESPECIFICACIONES.md](ESPECIFICACIONES.md) — read it for business rules before changing filtering/sorting logic.
+ENTO Web — static product catalog site for ENTO (Aislantes e Ingeniería), a distributor of accessories/insulators for medium and low voltage equipment. Angular 22 standalone app with SSR/prerender, **no backend**: all content is served as static JSON and rendered at build time.
 
 Deployed to GitHub Pages under a subpath (`/ENTO-WEB/`), built via [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml) on every push to `main`.
 
@@ -61,7 +61,7 @@ There is no production Dockerfile — production is the static `dist/ento-web/br
 
 ## Architecture
 
-- **No backend, ever.** Data lives as static JSON in `public/data/` (`products.json`, `brands.json`, `groups.json`) and is fetched via `HttpClient` from `DataService` ([src/app/core/services/data.service.ts](src/app/core/services/data.service.ts)). Do not introduce API calls or server endpoints for product data — this is explicitly out of scope (see ESPECIFICACIONES.md §9).
+- **No backend, ever.** Data lives as static JSON in `public/data/` (`products.json`, `brands.json`, `groups.json`) and is fetched via `HttpClient` from `DataService` ([src/app/core/services/data.service.ts](src/app/core/services/data.service.ts)). Do not introduce API calls or server endpoints for product data — this is explicitly out of scope.
 - **SSR/prerender only for SEO.** `src/app/app.routes.server.ts` prerenders every route (`RenderMode.Prerender`). There is no live Node server serving dynamic content in production — `serve:ssr:ento-web` exists but the deployed artifact is the static `dist/ento-web/browser` output uploaded to GitHub Pages.
 - **Folder structure**: `core/` (models + services, singleton/app-wide), `features/` (routed pages: `home`, `products`), `shared/components/` (reusable presentational components: product-card, product-modal, brand-carousel, header, footer, whatsapp-button). Routes are lazy-loaded via `loadComponent` in [src/app/app.routes.ts](src/app/app.routes.ts).
 - **Data model** (`Brand`, `Group`, `Product` in `src/app/core/models/`): only the `chardon` brand has groups (`hasGroups: true`), and a Chardon product can belong to multiple groups at once (`groupIds.length > 1`). Business rule: when listing Chardon products with no group filter active, multi-group products must sort first (`sortChardonMultiGroupFirst` in data.service.ts) — preserve this when touching filtering/sorting.
