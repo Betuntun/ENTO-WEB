@@ -12,13 +12,22 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
-import { DataService, normalizeSearchText, sortChardonFirst } from '../../core/services/data.service';
+import {
+  DataService,
+  normalizeSearchText,
+  sortChardonFirst,
+  sortChardonMultiGroupFirst,
+} from '../../core/services/data.service';
 import { SeoService } from '../../core/services/seo.service';
 import { Product } from '../../core/models';
 import { ProductCard } from '../../shared/components/product-card/product-card';
 import { ProductModal } from '../../shared/components/product-modal/product-modal';
 
 const PAGE_SIZE = 20;
+
+function parseList(raw: string | null): string[] {
+  return raw ? raw.split(',').filter(Boolean) : [];
+}
 
 @Component({
   selector: 'app-products-list',
@@ -39,12 +48,12 @@ export class ProductsList {
     initialValue: this.route.snapshot.queryParamMap,
   });
 
-  protected readonly selectedBrand = computed(() => this.queryParams().get('brand'));
-  // El filtro de grupo solo tiene efecto cuando la marca activa es Chardon (única con grupos).
-  // Así, una URL con ?group=x sin ?brand=chardon (ej. compartida a mano) no deja un filtro
-  // "fantasma" activo que no se refleje en el sidebar.
-  protected readonly selectedGroup = computed(() =>
-    this.selectedBrand() === 'chardon' ? this.queryParams().get('group') : null,
+  protected readonly selectedBrands = computed(() => parseList(this.queryParams().get('brand')));
+  // El filtro de grupo solo tiene efecto cuando Chardon está entre las marcas marcadas (única con
+  // grupos). Así, una URL con ?group=x sin Chardon en ?brand= (ej. compartida a mano) no deja un
+  // filtro "fantasma" activo que no se refleje en el sidebar.
+  protected readonly selectedGroups = computed(() =>
+    this.selectedBrands().includes('chardon') ? parseList(this.queryParams().get('group')) : [],
   );
   protected readonly searchTerm = computed(() => this.queryParams().get('q') ?? '');
 
@@ -53,7 +62,7 @@ export class ProductsList {
   );
 
   protected readonly groupOptions = computed(() =>
-    this.selectedBrand() === 'chardon' ? this.data.groupsForBrand('chardon')() : [],
+    this.selectedBrands().includes('chardon') ? this.data.groupsForBrand('chardon')() : [],
   );
 
   // Mapa brandId -> nombre normalizado, para poder buscar también por marca
@@ -67,15 +76,22 @@ export class ProductsList {
   });
 
   protected readonly filteredProducts = computed(() => {
-    const brandId = this.selectedBrand();
-    const groupId = this.selectedGroup();
+    const brandIds = this.selectedBrands();
+    const groupIds = this.selectedGroups();
     const term = normalizeSearchText(this.searchTerm().trim());
 
-    let list = brandId ? this.data.productsByBrand(brandId)() : sortChardonFirst(this.data.products());
+    let list = brandIds.length
+      ? this.data.products().filter((p) => brandIds.includes(p.brandId))
+      : this.data.products();
 
-    if (groupId) {
-      list = list.filter((p) => p.groupIds.includes(groupId));
+    if (groupIds.length) {
+      list = list.filter((p) => p.brandId !== 'chardon' || p.groupIds.some((g) => groupIds.includes(g)));
     }
+
+    // Preserva la regla de negocio: los productos Chardon con múltiples grupos van primero
+    // dentro de Chardon, y Chardon va primero en el listado general.
+    list = sortChardonFirst(sortChardonMultiGroupFirst(list));
+
     if (term) {
       const brandNames = this.brandNamesById();
       list = list.filter(
@@ -101,15 +117,16 @@ export class ProductsList {
   constructor() {
     effect(() => {
       // Cualquier cambio de filtro reinicia la ventana visible a la primera página.
-      this.selectedBrand();
-      this.selectedGroup();
+      this.selectedBrands();
+      this.selectedGroups();
       this.searchTerm();
       this.visibleCount.set(PAGE_SIZE);
     });
 
     effect(() => {
-      const brandId = this.selectedBrand();
-      const brand = brandId ? this.data.brands().find((b) => b.id === brandId) : null;
+      const brandIds = this.selectedBrands();
+      const brand =
+        brandIds.length === 1 ? this.data.brands().find((b) => b.id === brandIds[0]) : null;
       const title = brand ? `Productos ${brand.name} — ENTO` : 'Catálogo de productos — ENTO';
       const description = brand
         ? `Explora los productos de ${brand.name} disponibles en ENTO Aislantes e Ingeniería.`
@@ -147,12 +164,25 @@ export class ProductsList {
     inject(DestroyRef).onDestroy(() => this.observer?.disconnect());
   }
 
-  selectBrand(brandId: string | null): void {
-    this.navigateWithFilters({ brand: brandId, group: null });
+  toggleBrand(brandId: string): void {
+    const current = this.selectedBrands();
+    const next = current.includes(brandId)
+      ? current.filter((id) => id !== brandId)
+      : [...current, brandId];
+
+    this.navigateWithFilters({
+      brand: next.length ? next.join(',') : null,
+      ...(next.includes('chardon') ? {} : { group: null }),
+    });
   }
 
-  selectGroup(groupId: string | null): void {
-    this.navigateWithFilters({ group: groupId });
+  toggleGroup(groupId: string): void {
+    const current = this.selectedGroups();
+    const next = current.includes(groupId)
+      ? current.filter((id) => id !== groupId)
+      : [...current, groupId];
+
+    this.navigateWithFilters({ group: next.length ? next.join(',') : null });
   }
 
   openProduct(product: Product): void {

@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 1rem var(--content-padding-x);
+  padding: 0.75rem var(--content-padding-x);
   max-width: 1240px;
   margin-inline: auto;
   box-sizing: border-box;
@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: stretch;
     gap: 0.75rem;
-    padding: 0.75rem var(--content-padding-x);
+    padding: 0.6rem var(--content-padding-x);
   }
 }
 
@@ -28,7 +28,7 @@
   margin: 0 1.5rem;
 
   img {
-    height: 56px;
+    height: 100px;
     width: auto;
     object-fit: contain;
   }
@@ -38,7 +38,7 @@
     justify-content: center;
 
     img {
-      height: 44px;
+      height: 72px;
     }
   }
 }

@@ -2,30 +2,34 @@
   <aside class="sidebar">
     <h2>Filtrar por</h2>
 
-    <label class="sidebar__field">
-      Marca
-      <select (change)="selectBrand($any($event.target).value || null)">
-        <option value="" [selected]="!selectedBrand()">Todas</option>
-        @for (brand of filterableBrands(); track brand.id) {
-          <option [value]="brand.id" [selected]="brand.id === selectedBrand()">
-            {{ brand.name }}
-          </option>
-        }
-      </select>
-    </label>
+    <div class="sidebar__field">
+      <span class="sidebar__label">Marca</span>
+      @for (brand of filterableBrands(); track brand.id) {
+        <label class="sidebar__checkbox">
+          <input
+            type="checkbox"
+            [checked]="selectedBrands().includes(brand.id)"
+            (change)="toggleBrand(brand.id)"
+          />
+          {{ brand.name }}
+        </label>
+      }
+    </div>
 
-    @if (selectedBrand() === 'chardon') {
-      <label class="sidebar__field">
-        Grupo
-        <select (change)="selectGroup($any($event.target).value || null)">
-          <option value="" [selected]="!selectedGroup()">Todos</option>
-          @for (group of groupOptions(); track group.id) {
-            <option [value]="group.id" [selected]="group.id === selectedGroup()">
-              {{ group.name }}
-            </option>
-          }
-        </select>
-      </label>
+    @if (selectedBrands().includes('chardon')) {
+      <div class="sidebar__field">
+        <span class="sidebar__label">Grupo</span>
+        @for (group of groupOptions(); track group.id) {
+          <label class="sidebar__checkbox">
+            <input
+              type="checkbox"
+              [checked]="selectedGroups().includes(group.id)"
+              (change)="toggleGroup(group.id)"
+            />
+            {{ group.name }}
+          </label>
+        }
+      </div>
     }
   </aside>
 
