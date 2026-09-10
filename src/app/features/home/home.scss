@@ -72,6 +72,19 @@
   }
 }
 
+.hero__logo {
+  display: block;
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 0 1.25rem;
+
+  @media (max-width: 640px) {
+    height: 90px;
+    margin-bottom: 1rem;
+  }
+}
+
 .hero__highlight {
   color: var(--color-primary);
 }
